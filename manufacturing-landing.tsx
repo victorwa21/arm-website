@@ -309,15 +309,15 @@ export default function Component() {
                     <CardContent className="p-6">
                       <div className="mb-4">
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
+                          src="/images/vr-definition-image.png"
                           alt="Virtual Reality"
                           width={300}
                           height={200}
                           className="w-full h-48 object-cover rounded-lg mb-4"
                         />
                       </div>
-                      <h3 className="text-[#ffffff] font-semibold mb-2">Virtual Reality</h3>
-                      <p className="text-[#ffffff] text-sm">Immerse users in a digital environment</p>
+                      <h3 className="text-[#ffffff] font-semibold mb-2 text-left">Virtual Reality</h3>
+                      <p className="text-[#ffffff] text-sm text-left">A fully immersive digital environment</p>
                     </CardContent>
                   </Card>
 
@@ -325,15 +325,15 @@ export default function Component() {
                     <CardContent className="p-6">
                       <div className="mb-4">
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
+                          src="/images/ar-definition-image.png"
                           alt="Augmented Reality"
                           width={300}
                           height={200}
                           className="w-full h-48 object-cover rounded-lg mb-4"
                         />
                       </div>
-                      <h3 className="text-[#ffffff] font-semibold mb-2">Augmented Reality</h3>
-                      <p className="text-[#ffffff] text-sm">Overlay digital visuals in physical space</p>
+                      <h3 className="text-[#ffffff] font-semibold mb-2 text-left">Augmented Reality</h3>
+                      <p className="text-[#ffffff] text-sm text-left">Overlays digital visuals in physical space</p>
                     </CardContent>
                   </Card>
 
@@ -341,16 +341,16 @@ export default function Component() {
                     <CardContent className="p-6">
                       <div className="mb-4">
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
+                          src="/images/mr-definition-image.png"
                           alt="Mixed Reality"
                           width={300}
                           height={200}
                           className="w-full h-48 object-cover rounded-lg mb-4"
                         />
                       </div>
-                      <h3 className="text-[#ffffff] font-semibold mb-2">Mixed Reality</h3>
-                      <p className="text-[#ffffff] text-sm">
-                        Blend virtual elements to interact with real world elements
+                      <h3 className="text-[#ffffff] font-semibold mb-2 text-left">Mixed Reality</h3>
+                      <p className="text-[#ffffff] text-sm text-left">
+                        Allows virtual elements to interact with real-world elements
                       </p>
                     </CardContent>
                   </Card>
