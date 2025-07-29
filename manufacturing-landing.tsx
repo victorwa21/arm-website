@@ -906,27 +906,48 @@ export default function Component() {
 
                     {/* Testing Images */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                      <Image
-                        src="/images/coding-robot-arm.png"
-                        alt="Person testing VR problem-solving task"
-                        width={300}
-                        height={250}
-                        className="w-full h-auto rounded-lg"
-                      />
-                      <Image
-                        src="/images/ee-test.png"
-                        alt="Group testing robotic assembly task"
-                        width={300}
-                        height={250}
-                        className="w-full h-auto rounded-lg"
-                      />
-                      <Image
-                        src="/images/strawberry-factory-test.png"
-                        alt="Testing factory layout task"
-                        width={300}
-                        height={250}
-                        className="w-full h-auto rounded-lg"
-                      />
+                      <div className="relative group">
+                        <Image
+                          src="/images/coding-robot-arm.png"
+                          alt="Person testing VR problem-solving task"
+                          width={300}
+                          height={250}
+                          className="w-full h-auto rounded-lg transition-opacity duration-300 group-hover:opacity-50"
+                        />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-white bg-opacity-70 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <p className="h3 text-center">
+                            User learns to code a robot arm path
+                          </p>
+                        </div>
+                      </div>
+                      <div className="relative group">
+                        <Image
+                          src="/images/ee-test.png"
+                          alt="Group testing robotic assembly task"
+                          width={300}
+                          height={250}
+                          className="w-full h-auto rounded-lg transition-opacity duration-300 group-hover:opacity-50"
+                        />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-white bg-opacity-70 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <p className="h3 text-center">
+                            User learns about end effectors and matches them to the right process
+                          </p>
+                        </div>
+                      </div>
+                      <div className="relative group">
+                        <Image
+                          src="/images/strawberry-factory-test.png"
+                          alt="Testing factory layout task"
+                          width={300}
+                          height={250}
+                          className="w-full h-auto rounded-lg transition-opacity duration-300 group-hover:opacity-50"
+                        />
+                        <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-white bg-opacity-70 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <p className="h3 text-center">
+                            User learns about factory process by arranging robots in the right order
+                          </p>
+                        </div>
+                      </div>
                     </div>
 
                     <p className="text-gray-600 mb-8 leading-relaxed">
@@ -1197,7 +1218,6 @@ export default function Component() {
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/4kTTBTKmSpPKS7AWhlRJhC/public/images/real%20woirld%20chocolate.mp4"
                       type="video/mp4"
                     />
-                    Your browser does not support the video tag.
                   </video>
                 </div>
               </div>
@@ -1262,7 +1282,6 @@ export default function Component() {
                             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/2tmoYVBf6adgGo3ag-xApQ/public/images/chocolate%20mold%20disposal.mp4"
                             type="video/mp4"
                           />
-                          Your browser does not support the video tag.
                         </video>
                         <div className="absolute bottom-4 left-4 text-white h4 rounded">
                           <p className="h4">Chocolate Mold Disposal Container drops through a trap door when full</p>
@@ -1274,7 +1293,6 @@ export default function Component() {
                             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/u6uoXIW2oavqL4Yh35otfD/public/images/chocolate%20box.mp4"
                             type="video/mp4"
                           />
-                          Your browser does not support the video tag.
                         </video>
                         <div className="absolute bottom-4 left-4 text-white h4 rounded">
                           <p className="h4">Box closes itself when traveling down the conveyor belt</p>
@@ -1286,7 +1304,6 @@ export default function Component() {
                             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/yI1GsZwwNuoyuyLCZQ31oe/public/images/choc%20factory%20scene.mp4"
                             type="video/mp4"
                           />
-                          Your browser does not support the video tag.
                         </video>
                         <div className="absolute bottom-4 left-4 text-white h4 rounded">
                           <p className="h4">Playful factory scene features chocolate fountains and giant M&Ms</p>
@@ -1348,7 +1365,6 @@ export default function Component() {
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/ZjiWv7myTF847A_Ahz1uV2/public/images/MR%20Demo%20comp.mp4"
                     type="video/mp4"
                   />
-                  Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-8 left-8">
                   <h3 className="text-2xl font-bold text-white">Learning About Robotic Work</h3>
@@ -1401,7 +1417,6 @@ export default function Component() {
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/uUiwY8A2qV_yXVdfw4LCxt/public/images/mr%20clip.mp4"
                         type="video/mp4"
                       />
-                      Your browser does not support the video tag.
                     </video>
                   </div>
                 </div>
@@ -1433,7 +1448,6 @@ export default function Component() {
                         src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/W4bvDWfKy7z49KcxVS1QEw/public/images/DragAndDrop.mp4"
                         type="video/mp4"
                       />
-                      Your browser does not support the video tag.
                     </video>
                   </div>
                 </div>
@@ -1452,7 +1466,6 @@ export default function Component() {
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/1AXHiWnglcv9GVKE4Ndclx/public/images/Armbot%20demo%20vid.mp4"
                       type="video/mp4"
                     />
-                    Your browser does not support the video tag.
                   </video>
                 </div>
 
@@ -1506,7 +1519,6 @@ export default function Component() {
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/troC1GqXKFaIcoXccdmBSw/public/images/kenny%20testimony.mp4"
                     type="video/mp4"
                   />
-                  Your browser does not support the video tag.
                 </video>
               </div>
 
