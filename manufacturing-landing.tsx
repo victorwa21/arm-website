@@ -362,22 +362,35 @@ export default function Component() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                        <div className="flex-shrink-0 mt-1">
+                        <Image
+                          src="/images/safety.png"
+                          alt="Safety icon"
+                          width={24}
+                          height={24}
+                          className="mt-1 flex-shrink-0"
+                        /></div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Safety</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Eliminates the need to actually encounter potentially unsafe robots, machinery, or
-                            environments.
+                            Eliminates the need to actually encounter potentially unsafe robots at Mill 19.
                           </p>
                         </div>
                       </div>
 
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                         <div className="flex-shrink-0 mt-1">
+                        <Image
+                          src="/images/comfort.png"
+                          alt="Comfort icon"
+                          width={24}
+                          height={24}
+                          className="mt-1 flex-shrink-0"
+                        /></div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Comfort</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Allows for experiential learning without noise and distractions.
+                            Access the experience without noise and distractions.
                           </p>
                         </div>
                       </div>
@@ -385,22 +398,35 @@ export default function Component() {
 
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                         <div className="flex-shrink-0 mt-1">
+                        <Image
+                          src="/images/portability.png"
+                          alt="Portability icon"
+                          width={24}
+                          height={24}
+                          className="mt-1 flex-shrink-0"
+                        /></div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Portability</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Can be moved easily and cost-effectively to trade shows and other events outside of the MFG
-                            facility.
+                            Can be moved easily and cost-effectively to trade shows and other areas of the Mill 19 facility.
                           </p>
                         </div>
                       </div>
 
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                         <div className="flex-shrink-0 mt-1">
+                        <Image
+                          src="/images/flexibility.png"
+                          alt="Flexibility icon"
+                          width={24}
+                          height={24}
+                          className="mt-1 flex-shrink-0"
+                        /></div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Flexibility</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Can be used to simulate the experience with each individual robot.
+                            Make big changes to the experience with code.
                           </p>
                         </div>
                       </div>
