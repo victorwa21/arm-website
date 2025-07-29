@@ -142,6 +142,27 @@ export default function Component() {
     },
   }
 
+  const journeyData = [
+    {
+      src: "/images/mr-workstation.png",
+      alt: "MR Workstation",
+      title: "Mixed Reality Workstation",
+      description: "Getting familiar with automation in a safe, interactive environment",
+    },
+    {
+      src: "/images/VR-game-image.png",
+      alt: "VR Game Image",
+      title: "Virtual Reality Robotic Game",
+      description: "Learning the possibilities of robotics in a playful, interactive environment",
+    },
+    {
+      src: "/images/ARMbot.png",
+      alt: "Worker with technology",
+      title: "AI-Powered Guidance",
+      description: "Answering personalized questions about how manufacturing automation can best serve anyone",
+    },
+  ]
+
   return (
     <div className="min-h-screen bg-[#fafafa]">
       {/* Hero Section */}
@@ -202,33 +223,21 @@ export default function Component() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <Image
-                src="/images/mr-workstation.png"
-                alt="MR Workstation"
-                width={400}
-                height={800}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/VR-game-image.png"
-                alt="VR Game Image"
-                width={400}
-                height={800}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
-            <div>
-              <Image
-                src="/images/ARMbot.png"
-                alt="Worker with technology"
-                width={400}
-                height={800}
-                className="w-full h-full object-cover rounded-lg"
-              />
-            </div>
+            {journeyData.map((item, index) => (
+              <div key={index} className="relative group">
+                <Image
+                  src={item.src || "/placeholder.svg"}
+                  alt={item.alt}
+                  width={400}
+                  height={800}
+                  className="w-full h-full object-cover rounded-lg transition-opacity duration-300 group-hover:opacity-50"
+                />
+                <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-black bg-opacity-70 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <h3 className="text-xl font-semibold mb-2 text-center">{item.title}</h3>
+                  <p className="text-sm px-4 text-center">{item.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -1184,17 +1193,18 @@ export default function Component() {
                 </div>
                 <div>
                   <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
-                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/4kTTBTKmSpPKS7AWhlRJhC/public/images/real%20woirld%20chocolate.mp4" type="video/mp4" />
-                          Your browser does not support the video tag.
-                        </video>
+                    <source
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/4kTTBTKmSpPKS7AWhlRJhC/public/images/real%20woirld%20chocolate.mp4"
+                      type="video/mp4"
+                    />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </div>
 
               {/* Second Decision with Arrow */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              
                 <div>
-                
                   <Image
                     src="/images/creative-factory.png"
                     alt="Simplified production process"
@@ -1202,9 +1212,8 @@ export default function Component() {
                     height={300}
                     className="w-full h-auto rounded-lg"
                   />
-                  
                 </div>
-                
+
                 <div className="flex flex-col justify-center">
                   <div className="mb-6">
                     <Image
@@ -1249,32 +1258,38 @@ export default function Component() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                       <div className="text-left relative">
                         <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
-                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/2tmoYVBf6adgGo3ag-xApQ/public/images/chocolate%20mold%20disposal.mp4" type="video/mp4" />
+                          <source
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/2tmoYVBf6adgGo3ag-xApQ/public/images/chocolate%20mold%20disposal.mp4"
+                            type="video/mp4"
+                          />
                           Your browser does not support the video tag.
                         </video>
                         <div className="absolute bottom-4 left-4 text-white h4 rounded">
                           <p className="h4">Chocolate Mold Disposal Container drops through a trap door when full</p>
-                          
                         </div>
                       </div>
                       <div className="text-left relative">
                         <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
-                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/u6uoXIW2oavqL4Yh35otfD/public/images/chocolate%20box.mp4" type="video/mp4" />
+                          <source
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/u6uoXIW2oavqL4Yh35otfD/public/images/chocolate%20box.mp4"
+                            type="video/mp4"
+                          />
                           Your browser does not support the video tag.
                         </video>
                         <div className="absolute bottom-4 left-4 text-white h4 rounded">
                           <p className="h4">Box closes itself when traveling down the conveyor belt</p>
-                     
                         </div>
                       </div>
                       <div className="text-left relative">
                         <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
-                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/yI1GsZwwNuoyuyLCZQ31oe/public/images/choc%20factory%20scene.mp4" type="video/mp4" />
+                          <source
+                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/yI1GsZwwNuoyuyLCZQ31oe/public/images/choc%20factory%20scene.mp4"
+                            type="video/mp4"
+                          />
                           Your browser does not support the video tag.
                         </video>
                         <div className="absolute bottom-4 left-4 text-white h4 rounded">
-                          <p className="h4" >Playful factory scene features chocolate fountains and giant M&Ms</p>
-                          
+                          <p className="h4">Playful factory scene features chocolate fountains and giant M&Ms</p>
                         </div>
                       </div>
                     </div>
@@ -1373,10 +1388,21 @@ export default function Component() {
                     </ul>
                   </div>
                   <div>
-                    <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
-                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/uUiwY8A2qV_yXVdfw4LCxt/public/images/mr%20clip.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-auto rounded-lg"
+                      width={1200}
+                      height={400}
+                    >
+                      <source
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/uUiwY8A2qV_yXVdfw4LCxt/public/images/mr%20clip.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
 
@@ -1394,10 +1420,21 @@ export default function Component() {
                     </p>
                   </div>
                   <div>
-                    <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
-                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/W4bvDWfKy7z49KcxVS1QEw/public/images/DragAndDrop.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-auto rounded-lg"
+                      width={1200}
+                      height={400}
+                    >
+                      <source
+                        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/W4bvDWfKy7z49KcxVS1QEw/public/images/DragAndDrop.mp4"
+                        type="video/mp4"
+                      />
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
@@ -1411,7 +1448,10 @@ export default function Component() {
 
                 <div className="mb-12">
                   <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
-                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/1AXHiWnglcv9GVKE4Ndclx/public/images/Armbot%20demo%20vid.mp4" type="video/mp4" />
+                    <source
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/1AXHiWnglcv9GVKE4Ndclx/public/images/Armbot%20demo%20vid.mp4"
+                      type="video/mp4"
+                    />
                     Your browser does not support the video tag.
                   </video>
                 </div>
@@ -1529,7 +1569,6 @@ export default function Component() {
                 <div className="space-y-8">
                   {/* Robotics Career Card */}
                   <div className="bg-black rounded-lg p-6 flex items-center space-x-6">
-                    
                     <div className="flex-1">
                       <div className="flex items-center space-x-4">
                         <div className="w-16 h-16 rounded flex-shrink-0">
@@ -1555,7 +1594,6 @@ export default function Component() {
 
                   {/* Manufacturer Interest Card */}
                   <div className="bg-black rounded-lg p-6 flex items-center space-x-6">
-                   
                     <div className="flex-1">
                       <div className="flex items-center space-x-4">
                         <div className="w-16 h-16  rounded flex-shrink-0">
@@ -1568,9 +1606,7 @@ export default function Component() {
                           />
                         </div>
                         <div>
-                          <h4 className="text-white">
-                            Manufacturer Interest & visits to ARM for robots{" "}
-                          </h4>
+                          <h4 className="text-white">Manufacturer Interest & visits to ARM for robots </h4>
                           <p className="text-white">
                             If ARM is seeing more direct outreach from SMMs - more people stopping by the booth,
                             follow-ups after trade shows, and on-site visits to ARM, that's a large sign that the
