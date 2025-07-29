@@ -490,7 +490,7 @@ export default function Component() {
                     {/* Trade Show Image */}
                     <div className="mb-8">
                       <Image
-                        src="/placeholder.svg?height=400&width=800"
+                        src="/images/automate-photo.png"
                         alt="Getting feedback from Automate attendees"
                         width={800}
                         height={400}
@@ -540,7 +540,7 @@ export default function Component() {
                     {/* Testing Image */}
                     <div className="mb-8">
                       <Image
-                        src="/placeholder.svg?height=400&width=800"
+                        src="/images/xr-age-testing.png"
                         alt="Testing whether people of all ages would use XR"
                         width={800}
                         height={400}
@@ -831,21 +831,21 @@ export default function Component() {
                     {/* Testing Images */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                       <Image
-                        src="/placeholder.svg?height=250&width=300"
+                        src="/images/coding-robot-arm.png"
                         alt="Person testing VR problem-solving task"
                         width={300}
                         height={250}
                         className="w-full h-auto rounded-lg"
                       />
                       <Image
-                        src="/placeholder.svg?height=250&width=300"
+                        src="/images/ee-test.png"
                         alt="Group testing robotic assembly task"
                         width={300}
                         height={250}
                         className="w-full h-auto rounded-lg"
                       />
                       <Image
-                        src="/placeholder.svg?height=250&width=300"
+                        src="/images/strawberry-factory-test.png"
                         alt="Testing factory layout task"
                         width={300}
                         height={250}
@@ -865,7 +865,7 @@ export default function Component() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
                       <div className="text-center">
                         <Image
-                          src="/placeholder.svg?height=300&width=300"
+                          src="/images/most-engaging-chart.png"
                           alt="Most engaging and enjoyable chart"
                           width={300}
                           height={300}
@@ -875,7 +875,7 @@ export default function Component() {
 
                       <div className="text-center">
                         <Image
-                          src="/placeholder.svg?height=300&width=300"
+                          src="/images/learned-the-most.png"
                           alt="Learned the most chart"
                           width={300}
                           height={300}
@@ -1257,23 +1257,23 @@ export default function Component() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
                     <Image
-                      src="/placeholder.svg?height=150&width=200"
+                      src="/images/liquid-chocolate.png"
                       alt="Liquid chocolate animation"
                       width={200}
                       height={150}
                       className="w-full h-auto rounded-lg mb-2"
                     />
-                    <p className="text-sm text-gray-400">Liquid chocolate</p>
+                    
                   </div>
                   <div className="text-center">
                     <Image
-                      src="/placeholder.svg?height=150&width=200"
+                      src="/images/fake-liquid-chocolate.png"
                       alt="Fake liquid chocolate"
                       width={200}
                       height={150}
                       className="w-full h-auto rounded-lg mb-2"
                     />
-                    <p className="text-sm text-gray-400">Fake liquid chocolate</p>
+                    
                   </div>
                 </div>
               </div>
