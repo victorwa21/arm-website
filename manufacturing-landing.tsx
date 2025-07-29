@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 export default function Component() {
   const [activeSection, setActiveSection] = useState("problem")
   const [activeExperiment, setActiveExperiment] = useState("look-and-feel")
+  const [activeScene, setActiveScene] = useState("problem-solving")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -89,6 +90,22 @@ export default function Component() {
     personalization: {
       image: "/images/pers with ai.png",
       alt: "Personalization with AI experiment interface",
+    },
+  }
+
+  // Scene content data for high fidelity section
+  const sceneContent = {
+    "problem-solving": {
+      image: "/images/ps-in-vr.png",
+      alt: "High fidelity VR scene showing people working on problem-solving tasks",
+    },
+    "robotic-workstation": {
+      image: "/images/robotic workstation in mr.png",
+      alt: "Robotic work station in mixed reality scene",
+    },
+    "ai-guidance": {
+      image: "/images/ai guidance.png",
+      alt: "AI guidance scene interface",
     },
   }
 
@@ -806,22 +823,45 @@ export default function Component() {
                       We Created 3 Scenes Of The Story In High Fidelity.
                     </h3>
 
-                    {/* Scene Tabs */}
+                    {/* Interactive Scene Tabs */}
                     <div className="flex space-x-4 mb-6">
-                      <div className="bg-[#ffd700] text-[#000000] px-4 py-2 rounded text-sm font-medium">
+                      <button
+                        onClick={() => setActiveScene("problem-solving")}
+                        className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                          activeScene === "problem-solving"
+                            ? "bg-[#1e1e1e] text-[#ffd700]"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        }`}
+                      >
                         Problem-solving in VR
-                      </div>
-                      <div className="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm">
+                      </button>
+                      <button
+                        onClick={() => setActiveScene("robotic-workstation")}
+                        className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                          activeScene === "robotic-workstation"
+                            ? "bg-[#1e1e1e] text-[#ffd700]"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        }`}
+                      >
                         Robotic work station in MR
-                      </div>
-                      <div className="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm">AI guidance</div>
+                      </button>
+                      <button
+                        onClick={() => setActiveScene("ai-guidance")}
+                        className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                          activeScene === "ai-guidance"
+                            ? "bg-[#1e1e1e] text-[#ffd700]"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        }`}
+                      >
+                        AI guidance
+                      </button>
                     </div>
 
-                    {/* High Fidelity Scene Image */}
+                    {/* Dynamic Scene Content */}
                     <div className="mb-8">
                       <Image
-                        src="/images/ps-in-vr.png"
-                        alt="High fidelity VR scene showing people working on problem-solving tasks"
+                        src={sceneContent[activeScene].image || "/placeholder.svg"}
+                        alt={sceneContent[activeScene].alt}
                         width={800}
                         height={400}
                         className="w-full h-auto rounded-lg"
@@ -1499,7 +1539,7 @@ export default function Component() {
                       <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
                         <path
                           fillRule="evenodd"
-                          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947z"
+                          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947z"
                           clipRule="evenodd"
                         />
                         <path fillRule="evenodd" d="M10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
