@@ -83,11 +83,11 @@ export default function Component() {
       alt: "VR environment interface showing robotic work station",
     },
     gamification: {
-      image: "/placeholder.svg?height=400&width=800&text=Gamification+Experiment",
+      image: "/images/gamification.png",
       alt: "Gamification experiment interface",
     },
     personalization: {
-      image: "/placeholder.svg?height=400&width=800&text=Personalization+with+AI+Experiment",
+      image: "/images/pers with ai.png",
       alt: "Personalization with AI experiment interface",
     },
   }
@@ -700,7 +700,7 @@ export default function Component() {
                             : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                         }`}
                       >
-                        look and feel
+                        Look and Feel
                       </button>
                       <button
                         onClick={() => setActiveExperiment("gamification")}
