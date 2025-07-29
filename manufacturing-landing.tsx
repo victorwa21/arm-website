@@ -80,34 +80,34 @@ export default function Component() {
 
   const storyboardSlideshow = [
     {
-      src: "/images/capstone-kickoff.png",
-      title: "Capstone Kickoff w/ ARM",
-      date: "Feb 3, 2025",
+      src: "/images/storyboard 1.png",
+      title: "Exploring a robotic work station in mixed reality",
+      date: "With grab-able robotic items and annotations explaining each one",
     },
     {
-      src: "/images/sandboxvr.png",
-      title: "Sandbox VR",
-      date: "April 6, 2025",
+      src: "/images/storyboard 2.png",
+      title: "Meeting your “future self” in virtual reality",
+      date: "The future self represents the user with newfound robotics knowledge. They will guide the user throughout the experience.",
     },
     {
-      src: "/images/spring pres.png",
-      title: "Spring Presentation",
-      date: "April 21, 2025",
+      src: "/images/storyboard 3.png",
+      title: "Learning about automated factories",
+      date: "With guidance from the future self",
     },
     {
-      src: "/images/automate group photo.png",
-      title: "Automate Conference",
-      date: "May 14, 2025",
+      src: "/images/storyboard 4.png",
+      title: "Completing a robotics problem-solving task",
+      date: "To learn about manufacturing automation hands-on",
     },
     {
-      src: "/images/final pres.png",
-      title: "Final Presentation",
-      date: "July 21, 2025",
+      src: "/images/storyboard 5.png",
+      title: "Getting AI-powered personalized assistance",
+      date: "Because each of our audiences have specific needs and questions",
     },
     {
-      src: "/images/xena.png",
-      title: "Our Team Mascot, Xena",
-      date: ":)",
+      src: "/images/storyboard 6.png",
+      title: "Walking away with a real-world physical artifact",
+      date: "In this case, a chocolate bar. Read on to learn why!",
     },
   ]
 
@@ -824,24 +824,7 @@ export default function Component() {
                             </div>
                           </div>
                         ))}
-                        {/* Duplicate set for seamless loop */}
-                        {storyboardSlideshow.map((image, index) => (
-                          <div key={`duplicate-${index}`} className="flex-shrink-0 w-80 mx-4">
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                              <Image
-                                src={image.src || "/placeholder.svg"}
-                                alt={image.title}
-                                width={320}
-                                height={240}
-                                className="w-full h-60 object-cover"
-                              />
-                              <div className="p-4">
-                                <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
-                                <p className="text-gray-600 text-sm">{image.date}</p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
+                        
                       </div>
                     </div>
                     </div>
