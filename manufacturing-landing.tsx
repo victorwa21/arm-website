@@ -1246,43 +1246,34 @@ export default function Component() {
                   </div>
                   <div className="lg:col-span-3">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      <div className="text-center relative">
-                        <Image
-                          src="/placeholder.svg?height=200&width=250"
-                          alt="Chocolate Mold Disposal"
-                          width={250}
-                          height={200}
-                          className="w-full h-auto rounded-lg"
-                        />
-                        <div className="absolute bottom-4 left-4 bg-blue-600 text-white p-3 rounded">
-                          <p className="text-sm font-medium">Chocolate Mold Disposal</p>
-                          <p className="text-xs">Ceramic steps through a tiny door</p>
+                      <div className="text-left relative">
+                        <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
+                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/2tmoYVBf6adgGo3ag-xApQ/public/images/chocolate%20mold%20disposal.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                        <div className="absolute bottom-4 left-4 text-white h4 rounded">
+                          <p className="h4">Chocolate Mold Disposal Container drops through a trap door when full</p>
+                          
                         </div>
                       </div>
-                      <div className="text-center relative">
-                        <Image
-                          src="/placeholder.svg?height=200&width=250"
-                          alt="Digital factory scene"
-                          width={250}
-                          height={200}
-                          className="w-full h-auto rounded-lg"
-                        />
-                        <div className="absolute bottom-4 left-4 bg-blue-600 text-white p-3 rounded">
-                          <p className="text-sm font-medium">Digital factory scene</p>
-                          <p className="text-xs">One robot itself when looking down the conveyor line</p>
+                      <div className="text-left relative">
+                        <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
+                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/u6uoXIW2oavqL4Yh35otfD/public/images/chocolate%20box.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                        <div className="absolute bottom-4 left-4 text-white h4 rounded">
+                          <p className="h4">Box closes itself when traveling down the conveyor belt</p>
+                     
                         </div>
                       </div>
-                      <div className="text-center relative">
-                        <Image
-                          src="/placeholder.svg?height=200&width=250"
-                          alt="Chocolate features"
-                          width={250}
-                          height={200}
-                          className="w-full h-auto rounded-lg"
-                        />
-                        <div className="absolute bottom-4 left-4 bg-blue-600 text-white p-3 rounded">
-                          <p className="text-sm font-medium">Digital factory scene</p>
-                          <p className="text-xs">features chocolate humans and glaze</p>
+                      <div className="text-left relative">
+                        <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
+                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/yI1GsZwwNuoyuyLCZQ31oe/public/images/choc%20factory%20scene.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                        <div className="absolute bottom-4 left-4 text-white h4 rounded">
+                          <p className="h4" >Playful factory scene features chocolate fountains and giant M&Ms</p>
+                          
                         </div>
                       </div>
                     </div>
@@ -1424,13 +1415,10 @@ export default function Component() {
                 <h3 className="text-2xl font-semibold text-center mb-12">Getting AI-Powered Personalized Assistance</h3>
 
                 <div className="mb-12">
-                  <Image
-                    src="/placeholder.svg?height=400&width=1200"
-                    alt="ARMbot AI-powered personalized assistance interface"
-                    width={1200}
-                    height={400}
-                    className="w-full h-auto rounded-lg"
-                  />
+                  <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
+                    <source src="/images/Armbot vid.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
 
                 {/* Key Decisions For ARMbot */}
@@ -1479,7 +1467,10 @@ export default function Component() {
               {/* Kenny testimony video */}
               <div className="mb-16">
                 <video controls className="w-full h-auto rounded-lg" width={800} height={400}>
-                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/troC1GqXKFaIcoXccdmBSw/public/images/kenny%20testimony.mp4" type="video/mp4" />
+                  <source
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/troC1GqXKFaIcoXccdmBSw/public/images/kenny%20testimony.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
               </div>
@@ -1612,52 +1603,52 @@ export default function Component() {
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Thank You Section */}
-      <div className="bg-[#ffffff] py-20">
-        <div className="max-w-7xl mx-auto px-8 text-center">
-          <h2 className="text-5xl font-bold text-[#000000] mb-16">Thank You!</h2>
+        {/* Thank You Section */}
+        <div className="bg-[#ffffff] py-20">
+          <div className="max-w-7xl mx-auto px-8 text-center">
+            <h2 className="text-5xl font-bold text-[#000000] mb-16">Thank You!</h2>
 
-          {/* Slideshow Container */}
-          <div className="relative overflow-hidden rounded-lg bg-gray-100">
-            <div className="flex animate-scroll-left">
-              {/* First set of images */}
-              {slideshowImages.map((image, index) => (
-                <div key={index} className="flex-shrink-0 w-80 mx-4">
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <Image
-                      src={image.src || "/placeholder.svg"}
-                      alt={image.title}
-                      width={320}
-                      height={240}
-                      className="w-full h-60 object-cover"
-                    />
-                    <div className="p-4">
-                      <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
-                      <p className="text-gray-600 text-sm">{image.date}</p>
+            {/* Slideshow Container */}
+            <div className="relative overflow-hidden rounded-lg bg-gray-100">
+              <div className="flex animate-scroll-left">
+                {/* First set of images */}
+                {slideshowImages.map((image, index) => (
+                  <div key={index} className="flex-shrink-0 w-80 mx-4">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <Image
+                        src={image.src || "/placeholder.svg"}
+                        alt={image.title}
+                        width={320}
+                        height={240}
+                        className="w-full h-60 object-cover"
+                      />
+                      <div className="p-4">
+                        <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
+                        <p className="text-gray-600 text-sm">{image.date}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
-              {/* Duplicate set for seamless loop */}
-              {slideshowImages.map((image, index) => (
-                <div key={`duplicate-${index}`} className="flex-shrink-0 w-80 mx-4">
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <Image
-                      src={image.src || "/placeholder.svg"}
-                      alt={image.title}
-                      width={320}
-                      height={240}
-                      className="w-full h-60 object-cover"
-                    />
-                    <div className="p-4">
-                      <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
-                      <p className="text-gray-600 text-sm">{image.date}</p>
+                ))}
+                {/* Duplicate set for seamless loop */}
+                {slideshowImages.map((image, index) => (
+                  <div key={`duplicate-${index}`} className="flex-shrink-0 w-80 mx-4">
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <Image
+                        src={image.src || "/placeholder.svg"}
+                        alt={image.title}
+                        width={320}
+                        height={240}
+                        className="w-full h-60 object-cover"
+                      />
+                      <div className="p-4">
+                        <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
+                        <p className="text-gray-600 text-sm">{image.date}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>
