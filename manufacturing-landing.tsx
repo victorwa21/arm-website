@@ -85,13 +85,18 @@ export default function Component() {
       {/* Hero Section */}
       <section className="relative h-screen bg-gradient-to-b from-gray-600 to-gray-800">
         <div className="absolute inset-0">
-          <Image
-            src="/placeholder.svg?height=800&width=1200"
-            alt="Manufacturing facility"
-            fill
-            className="object-cover opacity-70"
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="object-cover w-full h-full opacity-70"
+          >
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/xOOEGqKemm6C99y937B_-S/public/videos/websitemill19video-comp.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
+
         <div className="relative z-10 flex flex-col justify-end items-start h-full max-w-7xl mx-auto px-8 pb-20 pr-0">
           <h1 className="text-5xl md:text-6xl font-bold text-[#ffffff] mb-16 max-w-4xl leading-tight">
             The Future Of Manufacturing Starts Here
