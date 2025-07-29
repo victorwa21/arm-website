@@ -16,8 +16,19 @@ export default function Component() {
       const usersSection = document.getElementById("users")
       const tacklingSection = document.getElementById("tackling")
       const writingSection = document.getElementById("writing")
+      const solutionSection = document.getElementById("solution")
+      const impactSection = document.getElementById("impact")
 
-      if (!problemSection || !hypothesisSection || !usersSection || !tacklingSection || !writingSection) return
+      if (
+        !problemSection ||
+        !hypothesisSection ||
+        !usersSection ||
+        !tacklingSection ||
+        !writingSection ||
+        !solutionSection ||
+        !impactSection
+      )
+        return
 
       const scrollPosition = window.scrollY + window.innerHeight / 2 // Use middle of viewport for better detection
 
@@ -26,8 +37,14 @@ export default function Component() {
       const usersTop = usersSection.getBoundingClientRect().top + window.scrollY
       const tacklingTop = tacklingSection.getBoundingClientRect().top + window.scrollY
       const writingTop = writingSection.getBoundingClientRect().top + window.scrollY
+      const solutionTop = solutionSection.getBoundingClientRect().top + window.scrollY
+      const impactTop = impactSection.getBoundingClientRect().top + window.scrollY
 
-      if (scrollPosition >= writingTop) {
+      if (scrollPosition >= impactTop) {
+        setActiveSection("impact")
+      } else if (scrollPosition >= solutionTop) {
+        setActiveSection("solution")
+      } else if (scrollPosition >= writingTop) {
         setActiveSection("writing")
       } else if (scrollPosition >= tacklingTop) {
         setActiveSection("tackling")
@@ -324,14 +341,20 @@ export default function Component() {
 
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">06</div>
-                    <div className="text-gray-400 font-medium underline cursor-pointer hover:text-white text-base">
+                    <div
+                      onClick={() => scrollToSection("solution")}
+                      className={`text-gray-400 font-medium underline cursor-pointer hover:text-white text-base`}
+                    >
                       The Solution
                     </div>
                   </div>
 
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">07</div>
-                    <div className="text-gray-400 font-medium underline cursor-pointer hover:text-white text-base">
+                    <div
+                      onClick={() => scrollToSection("impact")}
+                      className={`text-gray-400 font-medium underline cursor-pointer hover:text-white text-base`}
+                    >
                       The Impact
                     </div>
                   </div>
@@ -1147,41 +1170,61 @@ export default function Component() {
             <nav className="flex justify-between items-center text-sm">
               <div className="flex flex-col">
                 <span className="text-xs text-yellow-400 font-medium mb-1">01</span>
-                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                <span
+                  onClick={() => scrollToSection("problem")}
+                  className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
                   The Problem
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-yellow-400 font-medium mb-1">02</span>
-                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                <span
+                  onClick={() => scrollToSection("hypothesis")}
+                  className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
                   Our Hypothesis
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-yellow-400 font-medium mb-1">03</span>
-                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                <span
+                  onClick={() => scrollToSection("users")}
+                  className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
                   Understanding Our Users
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-yellow-400 font-medium mb-1">04</span>
-                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                <span
+                  onClick={() => scrollToSection("tackling")}
+                  className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
                   Tackling an Ambiguous Problem
                 </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-yellow-400 font-medium mb-1">05</span>
-                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                <span
+                  onClick={() => scrollToSection("writing")}
+                  className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
                   Writing an Impactful Story
                 </span>
               </div>
               <div className="flex flex-col text-white font-semibold cursor-pointer">
                 <span className="text-xs text-yellow-400 font-medium mb-1">06</span>
-                <span className="text-xs">The Solution</span>
+                <span onClick={() => scrollToSection("solution")} className="text-xs">
+                  The Solution
+                </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xs text-yellow-400 font-medium mb-1">07</span>
-                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                <span
+                  onClick={() => scrollToSection("impact")}
+                  className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors"
+                >
                   The Impact
                 </span>
               </div>
@@ -1190,7 +1233,7 @@ export default function Component() {
         </div>
 
         {/* Solution Content */}
-        <div className="py-20">
+        <div id="solution" className="py-20">
           <div className="max-w-7xl mx-auto px-8">
             <h2 className="text-5xl font-bold text-center mb-16">The Solution</h2>
 
@@ -1517,7 +1560,7 @@ export default function Component() {
         </div>
 
         {/* The Impact Section */}
-        <div className="bg-[#ffffff] py-20">
+        <div id="impact" className="bg-[#ffffff] py-20">
           <div className="text-center mb-16">
             <div className="inline-block bg-white px-8 py-4">
               <h2 className="text-5xl font-bold text-[#6e4aff]">The Impact</h2>
