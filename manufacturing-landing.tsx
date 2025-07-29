@@ -1592,8 +1592,8 @@ export default function Component() {
             <h2 className="text-5xl font-bold text-[#000000] mb-16">Thank You!</h2>
 
             {/* Slideshow Container */}
-            <div className="relative overflow-hidden rounded-lg bg-gray-100">
-              <div className="flex animate-scroll-left">
+            <div className="relative overflow-hidden rounded-lg">
+              <div className="flex animate-scroll-left px-6 py-4">
                 {/* First set of images */}
                 {slideshowImages.map((image, index) => (
                   <div key={index} className="flex-shrink-0 w-80 mx-4">
