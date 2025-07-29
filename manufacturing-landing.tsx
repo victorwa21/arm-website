@@ -1373,13 +1373,10 @@ export default function Component() {
                     </ul>
                   </div>
                   <div>
-                    <Image
-                      src="/placeholder.svg?height=300&width=500"
-                      alt="Robotic work station setup and custom app interface"
-                      width={500}
-                      height={300}
-                      className="w-full h-auto rounded-lg"
-                    />
+                    <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
+                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/uUiwY8A2qV_yXVdfw4LCxt/public/images/mr%20clip.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                   </div>
                 </div>
 
