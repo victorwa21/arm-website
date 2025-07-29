@@ -44,12 +44,12 @@ export default function Component() {
   // Slideshow data
   const slideshowImages = [
     {
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/capstone-kickoff.png",
       title: "Capstone Kickoff w/ ARM",
       date: "Feb 3, 2025",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/capstone-kickoff.png",
       title: "Sandbox VR",
       date: "April 6, 2025",
     },
@@ -59,24 +59,24 @@ export default function Component() {
       date: "April 19, 2025",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      title: "Spring Presentation Event",
+      src: "/images/spring pres.png",
+      title: "Spring Presentation",
       date: "April 21, 2025",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      title: "VR Development Session",
-      date: "March 15, 2025",
+      src: "/images/automate group photo.png",
+      title: "Automate Conference",
+      date: "May 14, 2025",
+    },
+    {
+      src: "/images/final pres.png",
+      title: "Final Presentation",
+      date: "July 21, 2025",
     },
     {
       src: "/placeholder.svg?height=400&width=600",
-      title: "User Testing Session",
-      date: "March 28, 2025",
-    },
-    {
-      src: "/placeholder.svg?height=400&width=600",
-      title: "Final Project Demo",
-      date: "May 1, 2025",
+      title: "Our Team Mascot, Xena :)",
+     
     },
   ]
 
@@ -431,51 +431,37 @@ export default function Component() {
                     </p>
 
                     {/* User Type Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                      <Card className="border-2 border-gray-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="mb-4">
-                            <Image
-                              src="/placeholder.svg?height=200&width=200"
-                              alt="Small Plant Owner"
-                              width={200}
-                              height={200}
-                              className="w-full h-48 object-contain"
-                            />
-                          </div>
-                          <h4 className="font-semibold text-[#000000]">Small Plant Owners</h4>
-                        </CardContent>
-                      </Card>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                      <div className="text-center">
+                        <Image
+                          src="/images/smo.png"
+                          alt="Ease of Learning Chart"
+                          width={300}
+                          height={200}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
+                     
+                      <div className="text-center">
+                        <Image
+                          src="/images/factoryoperators.png"
+                          alt="Factory Operator Image"
+                          width={300}
+                          height={200}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
 
-                      <Card className="border-2 border-gray-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="mb-4">
-                            <Image
-                              src="/placeholder.svg?height=200&width=200"
-                              alt="Factory Operator"
-                              width={200}
-                              height={200}
-                              className="w-full h-48 object-contain"
-                            />
-                          </div>
-                          <h4 className="font-semibold text-[#000000]">Factory Operators</h4>
-                        </CardContent>
-                      </Card>
-
-                      <Card className="border-2 border-gray-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="mb-4">
-                            <Image
-                              src="/placeholder.svg?height=200&width=200"
-                              alt="Students"
-                              width={200}
-                              height={200}
-                              className="w-full h-48 object-contain"
-                            />
-                          </div>
-                          <h4 className="font-semibold text-[#000000]">Students</h4>
-                        </CardContent>
-                      </Card>
+                     
+                      <div className="text-center">
+                        <Image
+                          src="/images/students.png"
+                          alt="Student Image"
+                          width={300}
+                          height={200}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -1145,7 +1131,7 @@ export default function Component() {
                 <div className="flex flex-col justify-center">
                   <div className="mb-6">
                     <Image
-                      src="/placeholder.svg?height=60&width=60"
+                      src="/images/arrow to first attempt.png"
                       alt="Arrow"
                       width={60}
                       height={60}
@@ -1156,7 +1142,7 @@ export default function Component() {
                   <div className="flex items-start space-x-3">
                     <div className="flex-shrink-0 mt-1">
                       <Image
-                        src="/placeholder.svg?height=20&width=20"
+                        src="/images/cancel.png"
                         alt="X icon"
                         width={20}
                         height={20}
@@ -1181,7 +1167,7 @@ export default function Component() {
                     <div className="flex items-start space-x-3">
                       <div className="flex-shrink-0 mt-1">
                         <Image
-                          src="/placeholder.svg?height=20&width=20"
+                          src="/images/check.png"
                           alt="Check icon"
                           width={20}
                           height={20}
@@ -1440,11 +1426,10 @@ export default function Component() {
               </div>
 
               {/* ARM Anticipates Section */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-64 mb-16">
                 <div>
                   <h3 className="text-2xl font-semibold mb-6 text-white">
-                    ARM Anticipates That This Experience Will Drastically Improve Their Ability To Serve Their
-                    Audiences.
+                    ARM Anticipates That This Experience Will Drastically Improve Their Ability To Serve Their Audiences.
                   </h3>
                   <p className="text-white mb-4">The new experience allows ARM to:</p>
                   <ul className="text-white space-y-2 text-sm">
@@ -1455,31 +1440,33 @@ export default function Component() {
                   </ul>
                 </div>
 
-                <div className="flex items-center justify-center">
+                {/* ✅ Updated Quote Image */}
+                <div className="w-full">
                   <Image
-                    src="/placeholder.svg?height=200&width=300"
+                    src="/images/arm quote 1.png"
                     alt="Factory production manager testimonial"
-                    width={300}
-                    height={200}
+                    width={600}
+                    height={300}
                     className="w-full h-auto rounded-lg"
                   />
                 </div>
               </div>
 
+
               {/* Testimonials Grid */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-64 mb-16">
                 <Image
-                  src="/placeholder.svg?height=150&width=400"
+                  src="/images/arm quote 2.png"
                   alt="ARM testimonial"
-                  width={400}
+                  width={300}
                   height={150}
                   className="w-full h-auto rounded-lg"
                 />
 
                 <Image
-                  src="/placeholder.svg?height=150&width=400"
+                  src="/images/arm quote 3.png"
                   alt="Factory Operator testimonial"
-                  width={400}
+                  width={300}
                   height={150}
                   className="w-full h-auto rounded-lg"
                 />
