@@ -54,11 +54,6 @@ export default function Component() {
       date: "April 6, 2025",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
-      title: "Spring Presentation Skit",
-      date: "April 19, 2025",
-    },
-    {
       src: "/images/spring pres.png",
       title: "Spring Presentation",
       date: "April 21, 2025",
@@ -74,7 +69,7 @@ export default function Component() {
       date: "July 21, 2025",
     },
     {
-      src: "/placeholder.svg?height=400&width=600",
+      src: "/images/xena.png",
       title: "Our Team Mascot, Xena :)",
      
     },
@@ -680,22 +675,7 @@ export default function Component() {
                       />
                     </div>
 
-                    <div className="bg-[#1e1e1e] text-[#ffffff] p-6 rounded-lg">
-                      <h4 className="font-semibold mb-4">What should the VR environment look and feel like?</h4>
-                      <p className="text-sm mb-4 leading-relaxed">
-                        We tested how immersive VR environments could look and feel. We created several robot
-                        workstations, as our test settings showed factory and machine space design.
-                      </p>
-                      <p className="text-sm mb-4 leading-relaxed">
-                        Across 8 participants familiar with automation, we measured engagement, satisfaction, focus, and
-                        perceived credibility. The immersive setting with just the right amount of detail was most
-                        effective, and often there is a strong, even distributed for "fun" and "serious."
-                      </p>
-                      <p className="text-sm leading-relaxed">
-                        Design Principle: Credibility is paramount when it comes to trust, but realism remains crucial,
-                        especially for operators like those we met at Automate.
-                      </p>
-                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -790,18 +770,7 @@ export default function Component() {
                       />
                     </div>
 
-                    <div className="bg-[#1e1e1e] text-[#ffffff] p-6 rounded-lg">
-                      <h4 className="font-semibold mb-4">Problem-solving in VR</h4>
-                      <p className="text-sm mb-4 leading-relaxed">
-                        Our user research showed that structured, task-based games with clear goals are successful at
-                        getting our target audience engaged and learning – so we felt it was important to prioritize the
-                        action of our story that does it best.
-                      </p>
-                      <p className="text-sm leading-relaxed">
-                        In this scene, users must put robotic tools in the right order to complete a successful
-                        chocolate bar assembly line.
-                      </p>
-                    </div>
+                    
                   </div>
 
                   {/* Creating the VR Problem-Solving Task */}
