@@ -1149,16 +1149,13 @@ export default function Component() {
           <div className="max-w-7xl mx-auto px-8">
             <h2 className="text-5xl font-bold text-center mb-16">The Solution</h2>
 
-            {/* Hero Image */}
+            {/* Hero Video */}
             <div className="mb-16">
               <div className="relative">
-                <Image
-                  src="/placeholder.svg?height=600&width=1200"
-                  alt="Problem-Solving In Virtual Reality"
-                  width={1200}
-                  height={600}
-                  className="w-full h-auto rounded-lg"
-                />
+                <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={600}>
+                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/_aabdx5yX10YfqvJ4F62kr/public/images/VR%20Video%20for%20Website.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
                 <div className="absolute top-8 left-8">
                   <h3 className="text-2xl font-bold text-white">Problem-Solving In Virtual Reality</h3>
                 </div>
@@ -1337,7 +1334,10 @@ export default function Component() {
               {/* Hero Image for Mixed Reality */}
               <div className="mb-12 relative">
                 <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
-                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/ZjiWv7myTF847A_Ahz1uV2/public/images/MR%20Demo%20comp.mp4" type="video/mp4" />
+                  <source
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/ZjiWv7myTF847A_Ahz1uV2/public/images/MR%20Demo%20comp.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-8 left-8">
