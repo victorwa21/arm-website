@@ -569,7 +569,7 @@ export default function Component() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                       <div className="text-center">
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
+                          src="/images/ease of use graph.png"
                           alt="Ease of Learning Chart"
                           width={300}
                           height={200}
@@ -579,7 +579,7 @@ export default function Component() {
 
                       <div className="text-center">
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
+                          src="/images/immersion rating graph.png"
                           alt="Immersion Rating Chart"
                           width={300}
                           height={200}
