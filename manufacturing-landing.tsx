@@ -1424,13 +1424,10 @@ export default function Component() {
                 <h3 className="text-2xl font-semibold text-center mb-12">Getting AI-Powered Personalized Assistance</h3>
 
                 <div className="mb-12">
-                  <Image
-                    src="/placeholder.svg?height=400&width=1200"
-                    alt="ARMbot AI-powered personalized assistance interface"
-                    width={1200}
-                    height={400}
-                    className="w-full h-auto rounded-lg"
-                  />
+                  <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
+                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/1AXHiWnglcv9GVKE4Ndclx/public/images/Armbot%20vid.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
 
                 {/* Key Decisions For ARMbot */}
@@ -1479,7 +1476,10 @@ export default function Component() {
               {/* Kenny testimony video */}
               <div className="mb-16">
                 <video controls className="w-full h-auto rounded-lg" width={800} height={400}>
-                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/troC1GqXKFaIcoXccdmBSw/public/images/kenny%20testimony.mp4" type="video/mp4" />
+                  <source
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/troC1GqXKFaIcoXccdmBSw/public/images/kenny%20testimony.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
               </div>
