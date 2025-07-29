@@ -1183,19 +1183,18 @@ export default function Component() {
                   </p>
                 </div>
                 <div>
-                  <Image
-                    src="/placeholder.svg?height=300&width=500"
-                    alt="Factory production line"
-                    width={500}
-                    height={300}
-                    className="w-full h-auto rounded-lg"
-                  />
+                  <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg">
+                          <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/4kTTBTKmSpPKS7AWhlRJhC/public/images/real%20woirld%20chocolate.mp4" type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
                 </div>
               </div>
 
               {/* Second Decision with Arrow */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+              
                 <div>
+                
                   <Image
                     src="/images/creative-factory.png"
                     alt="Simplified production process"
@@ -1203,7 +1202,9 @@ export default function Component() {
                     height={300}
                     className="w-full h-auto rounded-lg"
                   />
+                  
                 </div>
+                
                 <div className="flex flex-col justify-center">
                   <div className="mb-6">
                     <Image
