@@ -92,34 +92,38 @@ export default function Component() {
             className="object-cover opacity-70"
           />
         </div>
-        <div className="relative z-10 flex flex-col justify-end items-start h-full max-w-7xl mx-auto px-8 pb-20">
+        <div className="relative z-10 flex flex-col justify-end items-start h-full max-w-7xl mx-auto px-8 pb-20 pr-0">
           <h1 className="text-5xl md:text-6xl font-bold text-[#ffffff] mb-16 max-w-4xl leading-tight">
             The Future Of Manufacturing Starts Here
           </h1>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
             {/* Client */}
             <div>
               <h3 className="text-[#ffffff] font-semibold mb-4 text-lg">Client</h3>
-              <p className="text-[#ffffff] text-xl leading-relaxed">Advanced Robotics Manufacturing Institute (ARM)</p>
+              <p className="text-[#ffffff] text-xl font-bold leading-relaxed mx-0 px-0 pr-0 mr-6">
+                Advanced Robotics Manufacturing Institute (ARM)
+              </p>
             </div>
 
             {/* Creative Technologists */}
             <div>
               <h3 className="text-[#ffffff] font-semibold mb-4 text-lg">Creative Technologists</h3>
               <div className="space-y-2">
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Tassy Chen</p>
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Aarnav Sangekar</p>
+                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200 text-xl">Tassy Chen</p>
+                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200 text-xl">Aarnav Sangekar</p>
               </div>
             </div>
 
             {/* Creative Designers */}
-            <div>
+            <div className="text-left">
               <h3 className="text-[#ffffff] font-semibold mb-4 text-lg">Creative Designers</h3>
               <div className="space-y-2">
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Esha Garg</p>
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Jackie Strawbridge</p>
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Victor Wang</p>
+                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200 text-xl">Esha Garg</p>
+                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200 text-xl">
+                  Jackie Strawbridge
+                </p>
+                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200 text-xl">Victor Wang</p>
               </div>
             </div>
           </div>
@@ -174,9 +178,9 @@ export default function Component() {
               <div className="bg-[#1e1e1e] rounded-lg p-4">
                 <nav className="space-y-4">
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">01</div>
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">01</div>
                     <div
-                      className={`font-medium text-xs underline cursor-pointer hover:text-gray-200 ${
+                      className={`font-medium underline cursor-pointer hover:text-gray-200 text-base ${
                         activeSection === "problem" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
                     >
@@ -185,9 +189,9 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">02</div>
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">02</div>
                     <div
-                      className={`font-medium text-xs underline cursor-pointer hover:text-white ${
+                      className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "hypothesis" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
                     >
@@ -196,9 +200,9 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">03</div>
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">03</div>
                     <div
-                      className={`font-medium text-xs underline cursor-pointer hover:text-white ${
+                      className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "users" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
                     >
@@ -207,9 +211,9 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">04</div>
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">04</div>
                     <div
-                      className={`font-medium text-xs underline cursor-pointer hover:text-white ${
+                      className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "tackling" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
                     >
@@ -218,9 +222,9 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">05</div>
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">05</div>
                     <div
-                      className={`font-medium text-xs underline cursor-pointer hover:text-white ${
+                      className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "writing" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
                     >
@@ -229,15 +233,15 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">06</div>
-                    <div className="text-gray-400 font-medium text-xs underline cursor-pointer hover:text-white">
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">06</div>
+                    <div className="text-gray-400 font-medium underline cursor-pointer hover:text-white text-base">
                       The Solution
                     </div>
                   </div>
 
                   <div>
-                    <div className="text-yellow-400 text-xs font-medium mb-1">07</div>
-                    <div className="text-gray-400 font-medium text-xs underline cursor-pointer hover:text-white">
+                    <div className="text-yellow-400 font-medium mb-1 text-sm">07</div>
+                    <div className="text-gray-400 font-medium underline cursor-pointer hover:text-white text-base">
                       The Impact
                     </div>
                   </div>
@@ -255,16 +259,16 @@ export default function Component() {
 
                 <div className="space-y-8">
                   <div>
-                    <h3 className="text-xl font-semibold text-[#000000] mb-4">
+                    <h3 className="text-xl text-[#000000] mb-4 font-bold">
                       Manufacturing plants in the U.S. don't have enough workers.
                     </h3>
                     <p className="text-gray-600 mb-4"></p>
 
-                    <h3 className="text-xl font-semibold text-[#000000] mb-4">
+                    <h3 className="text-xl text-[#000000] mb-4 font-bold">
                       ARM helps strengthen U.S. manufacturing through robotics - with innovations.
                     </h3>
 
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    <p className="text-gray-600 mb-4 leading-relaxed text-base">
                       Pittsburgh's Advanced Robotics Manufacturing Institute (ARM) helps manufacturers use robotics to
                       overcome workforce gaps, and helps workers prepare for careers in manufacturing automation.
                     </p>
@@ -295,11 +299,10 @@ export default function Component() {
 
               {/* Content with same positioning as before */}
               <div className="relative z-10 text-center">
-                <h2 className="text-4xl font-bold text-[#ffffff] mb-4">
+                <h2 className="text-4xl text-[#ffffff] mb-4 text-left font-bold">
                   Our Hypothesis: Extended Reality Can Bridge The Gap
                 </h2>
-
-                <p className="text-[#ffffff] mb-16 text-lg">What Is Extended Reality?</p>
+                <p className="text-[#ffffff] mb-16 text-lg text-left mt-0 font-bold">What Is Extended Reality?</p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                   <Card className="bg-[#ffffff] bg-opacity-20 border-none">
@@ -410,13 +413,13 @@ export default function Component() {
             {/* Understanding Our Users Section */}
             <section id="users" className="py-20 bg-[#ffffff] -mx-8 px-8">
               <div>
-                <h2 className="text-3xl font-bold text-[#000000] mb-8">Understanding Our Users</h2>
+                <h2 className="text-3xl text-[#000000] mb-8 font-normal">Understanding Our Users</h2>
 
                 <div className="space-y-12">
                   {/* Who Is This Experience For */}
                   <div>
-                    <h3 className="text-xl font-semibold text-[#000000] mb-4">Who Is This Experience For?</h3>
-                    <p className="text-gray-600 mb-8 leading-relaxed">
+                    <h3 className="text-[#000000] mb-4 text-2xl font-normal">Who Is This Experience For?</h3>
+                    <p className="text-gray-600 mb-8 leading-relaxed text-lg">
                       In collaboration with ARM, we identified key groups that represent different stages of the
                       manufacturing workforce – some are shaping the industry today, and others are beginning to explore
                       their career paths.
@@ -473,8 +476,8 @@ export default function Component() {
 
                   {/* How Do Our Users Feel About XR */}
                   <div>
-                    <h3 className="text-xl font-semibold text-[#000000] mb-4">How Do Our Users Feel About XR?</h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
+                    <h3 className="text-[#000000] mb-4 font-normal text-2xl">How Do Our Users Feel About XR?</h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed text-lg">
                       We spoke with factory owners, managers, and workers at Automate, the largest automation trade show
                       in the U.S.
                     </p>
@@ -499,16 +502,16 @@ export default function Component() {
                       </p>
                     </div>
 
-                    <p className="text-[#000000] font-semibold mb-2">
+                    <p className="text-[#000000] mb-2 text-lg font-bold">
                       We were skeptical that factory workers would readily refuse XR if given the opportunity.
                     </p>
-                    <p className="text-gray-600 mb-8">So we put it to the test.</p>
+                    <p className="text-gray-600 mb-8 text-lg">So we put it to the test.</p>
 
                     {/* Testing Results */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                       <div>
-                        <h4 className="text-[#6e4aff] font-semibold mb-2">What we built:</h4>
-                        <p className="text-[#000000] font-medium mb-2">A virtual, interactive robot in</p>
+                        <h4 className="text-[#6e4aff] mb-2 font-bold">What we built:</h4>
+                        <p className="text-[#000000] mb-2 font-normal text-lg">A virtual, interactive robot in:</p>
                         <ul className="text-gray-600 text-sm space-y-1">
                           <li>• Virtual reality (with a headset)</li>
                           <li>• Augmented reality (with a phone)</li>
@@ -516,8 +519,8 @@ export default function Component() {
                       </div>
 
                       <div>
-                        <h4 className="text-[#6e4aff] font-semibold mb-2">Who we tested with:</h4>
-                        <p className="text-[#000000] font-medium mb-2">2 groups:</p>
+                        <h4 className="text-[#6e4aff] mb-2 font-bold">Who we tested with:</h4>
+                        <p className="text-[#000000] mb-2 font-normal text-lg">2 groups:</p>
                         <ul className="text-gray-600 text-sm space-y-1">
                           <li>• Ages 30-40</li>
                           <li>• Ages 40-50</li>
@@ -525,7 +528,7 @@ export default function Component() {
                       </div>
 
                       <div>
-                        <h4 className="text-[#6e4aff] font-semibold mb-2">What we measured:</h4>
+                        <h4 className="text-[#6e4aff] mb-2 font-bold">What we measured:</h4>
                         <ul className="text-gray-600 text-sm space-y-1">
                           <li>• Hesitation/excitement</li>
                           <li>• Comfort level</li>
@@ -1031,32 +1034,44 @@ export default function Component() {
           <div className="max-w-7xl mx-auto px-8 py-4">
             <nav className="flex justify-between items-center text-sm">
               <div className="flex flex-col">
-                <span className="text-s text-yellow-400 font-medium mb-1">01</span>
-                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">The Problem</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">01</span>
+                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                  The Problem
+                </span>
               </div>
               <div className="flex flex-col">
-               <span className="text-s text-yellow-400 font-medium mb-1">02</span>
-               <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Our Hypothesis</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">02</span>
+                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                  Our Hypothesis
+                </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-s text-yellow-400 font-medium mb-1">03</span>
-                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Understanding Our Users</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">03</span>
+                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                  Understanding Our Users
+                </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-s text-yellow-400 font-medium mb-1">04</span>
-                 <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Tackling an Ambiguous Problem</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">04</span>
+                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                  Tackling an Ambiguous Problem
+                </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-s text-yellow-400 font-medium mb-1">05</span>
-                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Writing an Impactful Story</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">05</span>
+                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                  Writing an Impactful Story
+                </span>
               </div>
               <div className="flex flex-col text-white font-semibold cursor-pointer">
-                <span className="text-s text-yellow-400 font-medium mb-1">06</span>
-                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">The Solution</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">06</span>
+                <span className="text-xs">The Solution</span>
               </div>
               <div className="flex flex-col">
-                <span className="text-s text-yellow-400 font-medium mb-1">07</span>
-                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">The Impact</span>
+                <span className="text-xs text-yellow-400 font-medium mb-1">07</span>
+                <span className="text-xs text-gray-400 hover:text-white cursor-pointer transition-colors">
+                  The Impact
+                </span>
               </div>
             </nav>
           </div>
