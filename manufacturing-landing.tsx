@@ -161,9 +161,9 @@ export default function Component() {
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="aspect-square">
+            <div>
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/images/ARMbot.png"
                 alt="Worker with technology"
                 width={400}
                 height={800}
@@ -286,7 +286,7 @@ export default function Component() {
 
                   <div className="w-full">
                     <Image
-                      src="/placeholder.svg?height=400&width=800"
+                      src="/images/mill19.png"
                       alt="Manufacturing facility overview"
                       width={800}
                       height={400}
@@ -594,7 +594,7 @@ export default function Component() {
 
                       <div className="text-center">
                         <Image
-                          src="/placeholder.svg?height=200&width=300"
+                          src="/images/preferred graph.png"
                           alt="Preference Chart"
                           width={300}
                           height={200}
