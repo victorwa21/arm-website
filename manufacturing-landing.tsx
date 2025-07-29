@@ -1411,7 +1411,7 @@ export default function Component() {
 
                 <div className="mb-12">
                   <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
-                    <source src="/images/Armbot vid.mp4" type="video/mp4" />
+                    <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/1AXHiWnglcv9GVKE4Ndclx/public/images/Armbot%20demo%20vid.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
