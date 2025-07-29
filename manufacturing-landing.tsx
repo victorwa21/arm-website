@@ -77,6 +77,40 @@ export default function Component() {
     },
   ]
 
+
+  const storyboardSlideshow = [
+    {
+      src: "/images/capstone-kickoff.png",
+      title: "Capstone Kickoff w/ ARM",
+      date: "Feb 3, 2025",
+    },
+    {
+      src: "/images/sandboxvr.png",
+      title: "Sandbox VR",
+      date: "April 6, 2025",
+    },
+    {
+      src: "/images/spring pres.png",
+      title: "Spring Presentation",
+      date: "April 21, 2025",
+    },
+    {
+      src: "/images/automate group photo.png",
+      title: "Automate Conference",
+      date: "May 14, 2025",
+    },
+    {
+      src: "/images/final pres.png",
+      title: "Final Presentation",
+      date: "July 21, 2025",
+    },
+    {
+      src: "/images/xena.png",
+      title: "Our Team Mascot, Xena",
+      date: ":)",
+    },
+  ]
+
   // Experiment content data
   const experimentContent = {
     "look-and-feel": {
@@ -769,51 +803,47 @@ export default function Component() {
                 <div className="space-y-12">
                   {/* Story Sketches */}
                   <div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                      <div className="text-center">
-                        <Image
-                          src="/placeholder.svg?height=300&width=400"
-                          alt="Sketch of exploring robotic work station in mixed reality"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto rounded-lg mb-4"
-                        />
-                        <h4 className="font-semibold text-[#000000] mb-2">
-                          Exploring a robotic work station in mixed reality
-                        </h4>
-                        <p className="text-gray-600 text-sm">
-                          With grab-able robotic items and annotations explaining each one.
-                        </p>
+                    <div className="relative overflow-hidden rounded-lg">
+                    <div className="w-full max-w-6xl mx-auto overflow-x-auto">
+                      <div className="flex">
+                        {/* First set of images */}
+                        {storyboardSlideshow.map((image, index) => (
+                          <div key={index} className="flex-shrink-0 w-80 mx-4">
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                              <Image
+                                src={image.src || "/placeholder.svg"}
+                                alt={image.title}
+                                width={320}
+                                height={240}
+                                className="w-full h-60 object-cover"
+                              />
+                              <div className="p-4">
+                                <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
+                                <p className="text-gray-600 text-sm">{image.date}</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                        {/* Duplicate set for seamless loop */}
+                        {storyboardSlideshow.map((image, index) => (
+                          <div key={`duplicate-${index}`} className="flex-shrink-0 w-80 mx-4">
+                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                              <Image
+                                src={image.src || "/placeholder.svg"}
+                                alt={image.title}
+                                width={320}
+                                height={240}
+                                className="w-full h-60 object-cover"
+                              />
+                              <div className="p-4">
+                                <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
+                                <p className="text-gray-600 text-sm">{image.date}</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
                       </div>
-
-                      <div className="text-center">
-                        <Image
-                          src="/placeholder.svg?height=300&width=400"
-                          alt="Sketch of meeting future self in virtual reality"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto rounded-lg mb-4"
-                        />
-                        <h4 className="font-semibold text-[#000000] mb-2">
-                          Meeting your "future self" in virtual reality
-                        </h4>
-                        <p className="text-gray-600 text-sm">
-                          The future self represents the user with newfound robotics knowledge. They will guide the user
-                          throughout the experience.
-                        </p>
-                      </div>
-
-                      <div className="text-center">
-                        <Image
-                          src="/placeholder.svg?height=300&width=400"
-                          alt="Sketch of learning scenario"
-                          width={400}
-                          height={300}
-                          className="w-full h-auto rounded-lg mb-4"
-                        />
-                        <h4 className="font-semibold text-[#000000] mb-2">Learning</h4>
-                        <p className="text-gray-600 text-sm">With guided interactions and feedback.</p>
-                      </div>
+                    </div>
                     </div>
                   </div>
 
