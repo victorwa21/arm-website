@@ -138,21 +138,21 @@ export default function Component() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="aspect-square">
+            <div >
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Manufacturing equipment"
+                src="/images/mr-workstation.png"
+                alt="MR Workstation"
                 width={400}
-                height={400}
+                height={800}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
-            <div className="aspect-square">
+            <div >
               <Image
-                src="/placeholder.svg?height=400&width=400"
-                alt="Robotic manufacturing"
+                src="/images/VR-game-image.png"
+                alt="VR Game Image"
                 width={400}
-                height={400}
+                height={800}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
@@ -161,7 +161,7 @@ export default function Component() {
                 src="/placeholder.svg?height=400&width=400"
                 alt="Worker with technology"
                 width={400}
-                height={400}
+                height={800}
                 className="w-full h-full object-cover rounded-lg"
               />
             </div>
