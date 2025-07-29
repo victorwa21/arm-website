@@ -49,7 +49,7 @@ export default function Component() {
       date: "Feb 3, 2025",
     },
     {
-      src: "/images/capstone-kickoff.png",
+      src: "/images/sandboxvr.png",
       title: "Sandbox VR",
       date: "April 6, 2025",
     },
@@ -476,16 +476,14 @@ export default function Component() {
                     {/* Trade Show Image */}
                     <div className="mb-8">
                       <Image
-                        src="/images/automate-photo.png"
+                        src="/images/automate photo.png"
                         alt="Getting feedback from Automate attendees"
                         width={800}
                         height={400}
                         className="w-full h-auto rounded-lg"
                       />
-                      <p className="text-sm text-gray-500 mt-2 text-center">Getting feedback from Automate attendees</p>
-                      <p className="text-sm text-gray-600 mt-1 text-center">
-                        Some older factory workers said they wouldn't want to try XR
-                      </p>
+                      
+                      
                     </div>
 
                     <p className="text-[#000000] mb-2 text-lg font-bold">
@@ -526,15 +524,13 @@ export default function Component() {
                     {/* Testing Image */}
                     <div className="mb-8">
                       <Image
-                        src="/images/xr-age-testing.png"
+                        src="/images/xr age testing.png"
                         alt="Testing whether people of all ages would use XR"
                         width={800}
                         height={400}
                         className="w-full h-auto rounded-lg"
                       />
-                      <p className="text-sm text-gray-500 mt-2 text-center">
-                        Testing whether people of all ages would use XR
-                      </p>
+                      
                     </div>
                   </div>
 
