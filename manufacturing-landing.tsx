@@ -686,7 +686,7 @@ export default function Component() {
                     {/* VR Environment Image */}
                     <div className="mb-8">
                       <Image
-                        src="/placeholder.svg?height=400&width=800"
+                        src="/images/look-and-feel.png"
                         alt="VR environment interface showing robotic work station"
                         width={800}
                         height={400}
@@ -796,7 +796,7 @@ export default function Component() {
                     {/* High Fidelity Scene Image */}
                     <div className="mb-8">
                       <Image
-                        src="/placeholder.svg?height=400&width=800"
+                        src="/images/ps-in-vr.png"
                         alt="High fidelity VR scene showing people working on problem-solving tasks"
                         width={800}
                         height={400}
@@ -907,7 +907,7 @@ export default function Component() {
                     {/* Chocolate Production Line Diagram */}
                     <div className="mb-12">
                       <Image
-                        src="/placeholder.svg?height=400&width=800"
+                        src="/images/chocolate-sketch.png"
                         alt="Chocolate production line diagram showing conveyor belt and robotic stations"
                         width={800}
                         height={400}
@@ -1135,7 +1135,7 @@ export default function Component() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
                 <div>
                   <Image
-                    src="/placeholder.svg?height=300&width=500"
+                    src="/images/creative-factory.png"
                     alt="Simplified production process"
                     width={500}
                     height={300}
