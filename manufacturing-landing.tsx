@@ -174,7 +174,7 @@ export default function Component() {
               <div className="bg-[#1e1e1e] rounded-lg p-4">
                 <nav className="space-y-4">
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">01</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">01</div>
                     <div
                       className={`font-medium text-xs underline cursor-pointer hover:text-gray-200 ${
                         activeSection === "problem" ? "text-[#ffffff] font-bold" : "text-gray-400"
@@ -185,7 +185,7 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">02</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">02</div>
                     <div
                       className={`font-medium text-xs underline cursor-pointer hover:text-white ${
                         activeSection === "hypothesis" ? "text-[#ffffff] font-bold" : "text-gray-400"
@@ -196,7 +196,7 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">03</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">03</div>
                     <div
                       className={`font-medium text-xs underline cursor-pointer hover:text-white ${
                         activeSection === "users" ? "text-[#ffffff] font-bold" : "text-gray-400"
@@ -207,7 +207,7 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">04</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">04</div>
                     <div
                       className={`font-medium text-xs underline cursor-pointer hover:text-white ${
                         activeSection === "tackling" ? "text-[#ffffff] font-bold" : "text-gray-400"
@@ -218,7 +218,7 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">05</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">05</div>
                     <div
                       className={`font-medium text-xs underline cursor-pointer hover:text-white ${
                         activeSection === "writing" ? "text-[#ffffff] font-bold" : "text-gray-400"
@@ -229,14 +229,14 @@ export default function Component() {
                   </div>
 
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">06</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">06</div>
                     <div className="text-gray-400 font-medium text-xs underline cursor-pointer hover:text-white">
                       The Solution
                     </div>
                   </div>
 
                   <div>
-                    <div className="text-gray-400 text-xs font-medium mb-1">07</div>
+                    <div className="text-yellow-400 text-xs font-medium mb-1">07</div>
                     <div className="text-gray-400 font-medium text-xs underline cursor-pointer hover:text-white">
                       The Impact
                     </div>
@@ -263,14 +263,15 @@ export default function Component() {
                     <h3 className="text-xl font-semibold text-[#000000] mb-4">
                       ARM helps strengthen U.S. manufacturing through robotics - with innovations.
                     </h3>
-                  
 
                     <p className="text-gray-600 mb-4 leading-relaxed">
-                      Pittsburgh’s Advanced Robotics Manufacturing Institute (ARM) helps manufacturers use robotics to overcome workforce gaps, and helps workers prepare for careers in manufacturing automation.
+                      Pittsburgh's Advanced Robotics Manufacturing Institute (ARM) helps manufacturers use robotics to
+                      overcome workforce gaps, and helps workers prepare for careers in manufacturing automation.
                     </p>
 
                     <p className="text-gray-600 mb-8 leading-relaxed">
-                      But constraints at their facility have prevented them from offering hands-on, immersive interactions with robots.
+                      But constraints at their facility have prevented them from offering hands-on, immersive
+                      interactions with robots.
                     </p>
                   </div>
 
@@ -660,7 +661,9 @@ export default function Component() {
                       Four Experiments Significantly Impacted Our Thinking
                     </h3>
                     <p className="text-gray-600 mb-8 leading-relaxed">
-                      These experiments addressed key questions we needed to answer before crafting the experience in XR. We developed design principles for each experiment to guide us through our process moving forward.
+                      These experiments addressed key questions we needed to answer before crafting the experience in
+                      XR. We developed design principles for each experiment to guide us through our process moving
+                      forward.
                     </p>
 
                     {/* Tabs */}
@@ -1026,14 +1029,35 @@ export default function Component() {
         {/* Horizontal Sticky Navigation */}
         <div className="sticky top-0 left-0 right-0 z-20 bg-[#1e1e1e] border-b border-gray-700">
           <div className="max-w-7xl mx-auto px-8 py-4">
-            <nav className="flex space-x-8 text-sm">
-              <div className="text-gray-400 hover:text-white cursor-pointer">The Problem</div>
-              <div className="text-gray-400 hover:text-white cursor-pointer">Our Hypothesis</div>
-              <div className="text-gray-400 hover:text-white cursor-pointer">Understanding Our Users</div>
-              <div className="text-gray-400 hover:text-white cursor-pointer">Tackling an Ambiguous Problem</div>
-              <div className="text-gray-400 hover:text-white cursor-pointer">Writing an Impactful Story</div>
-              <div className="text-white font-semibold">The Solution</div>
-              <div className="text-gray-400 hover:text-white cursor-pointer">The Impact</div>
+            <nav className="flex justify-between items-center text-sm">
+              <div className="flex flex-col">
+                <span className="text-s text-yellow-400 font-medium mb-1">01</span>
+                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">The Problem</span>
+              </div>
+              <div className="flex flex-col">
+               <span className="text-s text-yellow-400 font-medium mb-1">02</span>
+               <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Our Hypothesis</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-s text-yellow-400 font-medium mb-1">03</span>
+                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Understanding Our Users</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-s text-yellow-400 font-medium mb-1">04</span>
+                 <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Tackling an Ambiguous Problem</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-s text-yellow-400 font-medium mb-1">05</span>
+                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">Writing an Impactful Story</span>
+              </div>
+              <div className="flex flex-col text-white font-semibold cursor-pointer">
+                <span className="text-s text-yellow-400 font-medium mb-1">06</span>
+                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">The Solution</span>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-s text-yellow-400 font-medium mb-1">07</span>
+                <span className="text-s text-white-400 hover:text-white cursor-pointer transition-colors">The Impact</span>
+              </div>
             </nav>
           </div>
         </div>
@@ -1075,7 +1099,6 @@ export default function Component() {
                     But since VR only gives the user a small physical space to move around, we had to shrink the entire
                     factory process into a much smaller area than what a real factory would need.
                   </p>
-                 
                 </div>
                 <div>
                   <Image
@@ -1205,10 +1228,15 @@ export default function Component() {
                     Another challenge was optimizing the performance of the liquid chocolate.
                   </p>
                   <p className="text-gray-300 mb-4 leading-relaxed">
-                    The liquid animation relies on countless small particles that constantly collide and interact to mimic liquid movement. Tracking and updating too many of these particles at once can easily overwhelm the headset, causing choppy rendering of what users see or even slowing down the experience.
+                    The liquid animation relies on countless small particles that constantly collide and interact to
+                    mimic liquid movement. Tracking and updating too many of these particles at once can easily
+                    overwhelm the headset, causing choppy rendering of what users see or even slowing down the
+                    experience.
                   </p>
                   <p className="text-gray-300 leading-relaxed">
-                    So we optimized the system by controlling the number of particles and their lifespan: once the liquid chocolate finishes pouring, we swap the real particle-based liquid with a static fake version that looks similar.
+                    So we optimized the system by controlling the number of particles and their lifespan: once the
+                    liquid chocolate finishes pouring, we swap the real particle-based liquid with a static fake version
+                    that looks similar.
                   </p>
                 </div>
                 <div className="grid grid-cols-2 gap-4">
@@ -1262,15 +1290,18 @@ export default function Component() {
                   <div>
                     <h4 className="text-xl font-semibold mb-4">Simple, Right? Not Really...</h4>
                     <p className="text-gray-300 mb-4 leading-relaxed">
-                      ARM needs to display their virtual work station in several spaces besides Mill 19 (like at trade shows).
+                      ARM needs to display their virtual work station in several spaces besides Mill 19 (like at trade
+                      shows).
                     </p>
                     <p className="text-gray-300 mb-8 leading-relaxed">
-                      However, XR headsets don’t understand the spaces they’re in, making it difficult to position the work station as needed in new spaces.
+                      However, XR headsets don't understand the spaces they're in, making it difficult to position the
+                      work station as needed in new spaces.
                     </p>
 
                     <h4 className="text-xl font-semibold mb-4">We built a custom app to solve this problem</h4>
                     <p className="text-gray-300 mb-4 leading-relaxed">
-                      To solve this problem, we leveraged brand new technologies for recognizing and remembering objects in an environment.
+                      To solve this problem, we leveraged brand new technologies for recognizing and remembering objects
+                      in an environment.
                     </p>
                     <p className="text-gray-300 mb-4 leading-relaxed">We built a custom app with a system that:</p>
                     <ul className="text-gray-300 space-y-2">
@@ -1300,7 +1331,9 @@ export default function Component() {
                       After handing off our experience, ARM will continue to add and adapt content.
                     </p>
                     <p className="text-gray-300 leading-relaxed">
-                      Within our custom app, we created a fully “modular” system, meaning ARM will be able to update the robotic work station by allowing them to just drag-and-drop objects. This gives them total control of the experience - and no coding!
+                      Within our custom app, we created a fully "modular" system, meaning ARM will be able to update the
+                      robotic work station by allowing them to just drag-and-drop objects. This gives them total control
+                      of the experience - and no coding!
                     </p>
                   </div>
                   <div>
@@ -1340,17 +1373,21 @@ export default function Component() {
                     <div>
                       <h4 className="text-xl font-semibold mb-4">Trained To Ask Questions</h4>
                       <p className="text-gray-300 leading-relaxed">
-                        ARM is trained to prompt users for specific information about their specific situations so that it can give the most tailored advice possible.
+                        ARM is trained to prompt users for specific information about their specific situations so that
+                        it can give the most tailored advice possible.
                       </p>
                     </div>
 
                     <div>
                       <h4 className="text-xl font-semibold mb-4">Finding The Right "Offering"</h4>
                       <p className="text-gray-300 leading-relaxed">
-                        Testing with manufacturers and the client revealed that the alpha version of ARMbot prioritized questions over answers. It struggled to provide a clear “offramp” that would direct users to ARM’s resources and services.
+                        Testing with manufacturers and the client revealed that the alpha version of ARMbot prioritized
+                        questions over answers. It struggled to provide a clear "offramp" that would direct users to
+                        ARM's resources and services.
                       </p>
                       <p className="text-gray-300 mt-4 leading-relaxed">
-                        We continued testing to identify the optimal balance between questions and direction and re-trained ARMbot with that in mind.
+                        We continued testing to identify the optimal balance between questions and direction and
+                        re-trained ARMbot with that in mind.
                       </p>
                     </div>
                   </div>
@@ -1462,9 +1499,11 @@ export default function Component() {
                           />
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold">robotics career.org visits</h4>
+                          <h4 className="text-white font-semibold">roboticscareer.org visits</h4>
                           <p className="text-gray-300 text-sm">
-                           If more people are visiting ARM’s website for robotics jobs and robotics training after engaging with the experience, it’s a strong signal that the experience is sparking career interest and action.
+                            If more people are visiting ARM's website for robotics jobs and robotics training after
+                            engaging with the experience, it's a strong signal that the experience is sparking career
+                            interest and action.
                           </p>
                         </div>
                       </div>
@@ -1490,9 +1529,13 @@ export default function Component() {
                           />
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold">Manufacturer Interest & visits to ARM for robots </h4>
+                          <h4 className="text-white font-semibold">
+                            Manufacturer Interest & visits to ARM for robots{" "}
+                          </h4>
                           <p className="text-gray-300 text-sm">
-                            If ARM is seeing more direct outreach from SMMs - more people stopping by the booth, follow-ups after trade shows, and on-site visits to ARM, that’s a large sign that the experience is making waves.
+                            If ARM is seeing more direct outreach from SMMs - more people stopping by the booth,
+                            follow-ups after trade shows, and on-site visits to ARM, that's a large sign that the
+                            experience is making waves.
                           </p>
                         </div>
                       </div>
