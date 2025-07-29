@@ -1529,16 +1529,7 @@ export default function Component() {
                 <div className="space-y-8">
                   {/* Robotics Career Card */}
                   <div className="bg-black rounded-lg p-6 flex items-center space-x-6">
-                    <div className="w-24 h-16 bg-[#ffd700] rounded flex items-center justify-center flex-shrink-0">
-                      <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                          fillRule="evenodd"
-                          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947z"
-                          clipRule="evenodd"
-                        />
-                        <path fillRule="evenodd" d="M10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
-                      </svg>
-                    </div>
+                    
                     <div className="flex-1">
                       <div className="flex items-center space-x-4">
                         <div className="w-16 h-16 bg-gray-700 rounded flex-shrink-0">
@@ -1551,8 +1542,8 @@ export default function Component() {
                           />
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold">roboticscareer.org visits</h4>
-                          <p className="text-gray-300 text-sm">
+                          <h4 className="text-white">roboticscareer.org visits</h4>
+                          <p className="text-white">
                             If more people are visiting ARM's website for robotics jobs and robotics training after
                             engaging with the experience, it's a strong signal that the experience is sparking career
                             interest and action.
@@ -1564,11 +1555,7 @@ export default function Component() {
 
                   {/* Manufacturer Interest Card */}
                   <div className="bg-black rounded-lg p-6 flex items-center space-x-6">
-                    <div className="w-24 h-16 bg-[#ffd700] rounded flex items-center justify-center flex-shrink-0">
-                      <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
-                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
-                      </svg>
-                    </div>
+                   
                     <div className="flex-1">
                       <div className="flex items-center space-x-4">
                         <div className="w-16 h-16 bg-gray-700 rounded flex-shrink-0">
@@ -1581,10 +1568,10 @@ export default function Component() {
                           />
                         </div>
                         <div>
-                          <h4 className="text-white font-semibold">
+                          <h4 className="text-white">
                             Manufacturer Interest & visits to ARM for robots{" "}
                           </h4>
-                          <p className="text-gray-300 text-sm">
+                          <p className="text-white">
                             If ARM is seeing more direct outreach from SMMs - more people stopping by the booth,
                             follow-ups after trade shows, and on-site visits to ARM, that's a large sign that the
                             experience is making waves.
