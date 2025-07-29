@@ -246,7 +246,7 @@ export default function Component() {
 
       {/* Journey Section */}
       <section className="py-20 bg-[#ffffff]">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-7xl mx-auto px-8 text-left">
           <h2 className="text-4xl font-bold text-[#000000] mb-16">
             Three Parts Of A Journey To The Future Of Manufacturing
           </h2>
