@@ -1532,9 +1532,9 @@ export default function Component() {
                     
                     <div className="flex-1">
                       <div className="flex items-center space-x-4">
-                        <div className="w-16 h-16 bg-gray-700 rounded flex-shrink-0">
+                        <div className="w-16 h-16 rounded flex-shrink-0">
                           <Image
-                            src="/placeholder.svg?height=64&width=64"
+                            src="/images/roboticscareer logo.png"
                             alt="Robotics career visits"
                             width={64}
                             height={64}
@@ -1558,9 +1558,9 @@ export default function Component() {
                    
                     <div className="flex-1">
                       <div className="flex items-center space-x-4">
-                        <div className="w-16 h-16 bg-gray-700 rounded flex-shrink-0">
+                        <div className="w-16 h-16  rounded flex-shrink-0">
                           <Image
-                            src="/placeholder.svg?height=64&width=64"
+                            src="/images/smm interest.png"
                             alt="Manufacturer interest"
                             width={64}
                             height={64}
