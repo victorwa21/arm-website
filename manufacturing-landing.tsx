@@ -19,12 +19,13 @@ export default function Component() {
 
       if (!problemSection || !hypothesisSection || !usersSection || !tacklingSection || !writingSection) return
 
-      const scrollPosition = window.scrollY + 200 // Offset for better detection
-      const problemTop = problemSection.offsetTop
-      const hypothesisTop = hypothesisSection.offsetTop
-      const usersTop = usersSection.offsetTop
-      const tacklingTop = tacklingSection.offsetTop
-      const writingTop = writingSection.offsetTop
+      const scrollPosition = window.scrollY + window.innerHeight / 2 // Use middle of viewport for better detection
+
+      const problemTop = problemSection.getBoundingClientRect().top + window.scrollY
+      const hypothesisTop = hypothesisSection.getBoundingClientRect().top + window.scrollY
+      const usersTop = usersSection.getBoundingClientRect().top + window.scrollY
+      const tacklingTop = tacklingSection.getBoundingClientRect().top + window.scrollY
+      const writingTop = writingSection.getBoundingClientRect().top + window.scrollY
 
       if (scrollPosition >= writingTop) {
         setActiveSection("writing")
@@ -40,8 +41,19 @@ export default function Component() {
     }
 
     window.addEventListener("scroll", handleScroll)
+    handleScroll() // Call once on mount
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId)
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      })
+    }
+  }
 
   // Slideshow data
   const slideshowImages = [
@@ -253,6 +265,7 @@ export default function Component() {
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">01</div>
                     <div
+                      onClick={() => scrollToSection("problem")}
                       className={`font-medium underline cursor-pointer hover:text-gray-200 text-base ${
                         activeSection === "problem" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
@@ -264,6 +277,7 @@ export default function Component() {
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">02</div>
                     <div
+                      onClick={() => scrollToSection("hypothesis")}
                       className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "hypothesis" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
@@ -275,6 +289,7 @@ export default function Component() {
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">03</div>
                     <div
+                      onClick={() => scrollToSection("users")}
                       className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "users" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
@@ -286,6 +301,7 @@ export default function Component() {
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">04</div>
                     <div
+                      onClick={() => scrollToSection("tackling")}
                       className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "tackling" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
@@ -297,6 +313,7 @@ export default function Component() {
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">05</div>
                     <div
+                      onClick={() => scrollToSection("writing")}
                       className={`font-medium underline cursor-pointer hover:text-white text-base ${
                         activeSection === "writing" ? "text-[#ffffff] font-bold" : "text-gray-400"
                       }`}
@@ -915,9 +932,7 @@ export default function Component() {
                           className="w-full h-auto rounded-lg transition-opacity duration-300 group-hover:opacity-50"
                         />
                         <div className="absolute inset-0 flex flex-col items-center justify-center rounded-lg bg-white bg-opacity-70 text-black opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <p className="h3 text-center">
-                            User learns to code a robot arm path
-                          </p>
+                          <p className="h3 text-center">User learns to code a robot arm path</p>
                         </div>
                       </div>
                       <div className="relative group">
