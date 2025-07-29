@@ -70,7 +70,8 @@ export default function Component() {
     },
     {
       src: "/images/xena.png",
-      title: "Our Team Mascot, Xena :)",
+      title: "Our Team Mascot, Xena",
+      date: ":)"
     },
   ]
 

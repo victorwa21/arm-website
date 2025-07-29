@@ -114,10 +114,10 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%); /* Adjust this value based on the number of images and their widths */
+    transform: translateX(calc(-352px * 6)); /* 6 images × (320px width + 32px margin) */
   }
 }
 
 .animate-scroll-left {
-  animation: scroll-left 40s linear infinite; /* Adjust the duration for desired speed */
+  animation: scroll-left 60s linear infinite; /* Slower animation to show each image fully */
 }
