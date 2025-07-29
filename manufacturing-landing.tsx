@@ -1153,7 +1153,10 @@ export default function Component() {
             <div className="mb-16">
               <div className="relative">
                 <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={600}>
-                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/_aabdx5yX10YfqvJ4F62kr/public/images/VR%20Video%20for%20Website.mp4" type="video/mp4" />
+                  <source
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/_aabdx5yX10YfqvJ4F62kr/public/images/VR%20Video%20for%20Website.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-8 left-8">
@@ -1473,15 +1476,12 @@ export default function Component() {
           {/* Full-width purple background section */}
           <div className="bg-[#6e4aff] w-full">
             <div className="max-w-7xl mx-auto px-8 py-12">
-              {/* Kenny placeholder image */}
+              {/* Kenny testimony video */}
               <div className="mb-16">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Kenny, Factory Operator"
-                  width={800}
-                  height={400}
-                  className="w-full h-auto rounded-lg"
-                />
+                <video controls className="w-full h-auto rounded-lg" width={800} height={400}>
+                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/troC1GqXKFaIcoXccdmBSw/public/images/kenny%20testimony.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
 
               {/* ARM Anticipates Section */}
