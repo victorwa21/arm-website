@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function Component() {
   const [activeSection, setActiveSection] = useState("problem")
+  const [activeExperiment, setActiveExperiment] = useState("look-and-feel")
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,9 +72,25 @@ export default function Component() {
     {
       src: "/images/xena.png",
       title: "Our Team Mascot, Xena",
-      date: ":)"
+      date: ":)",
     },
   ]
+
+  // Experiment content data
+  const experimentContent = {
+    "look-and-feel": {
+      image: "/images/look-and-feel.png",
+      alt: "VR environment interface showing robotic work station",
+    },
+    gamification: {
+      image: "/placeholder.svg?height=400&width=800&text=Gamification+Experiment",
+      alt: "Gamification experiment interface",
+    },
+    personalization: {
+      image: "/placeholder.svg?height=400&width=800&text=Personalization+with+AI+Experiment",
+      alt: "Personalization with AI experiment interface",
+    },
+  }
 
   return (
     <div className="min-h-screen bg-[#fafafa]">
@@ -359,22 +376,37 @@ export default function Component() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                        <div className="flex-shrink-0 mt-1">
+                          <Image
+                            src="/images/safety.png"
+                            alt="Safety icon"
+                            width={24}
+                            height={24}
+                            className="mt-1 flex-shrink-0"
+                          />
+                        </div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Safety</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Eliminates the need to actually encounter potentially unsafe robots, machinery, or
-                            environments.
+                            Eliminates the need to actually encounter potentially unsafe robots at Mill 19.
                           </p>
                         </div>
                       </div>
 
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                        <div className="flex-shrink-0 mt-1">
+                          <Image
+                            src="/images/comfort.png"
+                            alt="Comfort icon"
+                            width={24}
+                            height={24}
+                            className="mt-1 flex-shrink-0"
+                          />
+                        </div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Comfort</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Allows for experiential learning without noise and distractions.
+                            Access the experience without noise and distractions.
                           </p>
                         </div>
                       </div>
@@ -382,23 +414,37 @@ export default function Component() {
 
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                        <div className="flex-shrink-0 mt-1">
+                          <Image
+                            src="/images/portability.png"
+                            alt="Portability icon"
+                            width={24}
+                            height={24}
+                            className="mt-1 flex-shrink-0"
+                          />
+                        </div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Portability</h4>
                           <p className="text-[#ffffff] text-sm">
-                            Can be moved easily and cost-effectively to trade shows and other events outside of the MFG
+                            Can be moved easily and cost-effectively to trade shows and other areas of the Mill 19
                             facility.
                           </p>
                         </div>
                       </div>
 
                       <div className="flex items-start space-x-4">
-                        <div className="w-6 h-6 bg-[#ffd700] rounded-full flex-shrink-0 mt-1"></div>
+                        <div className="flex-shrink-0 mt-1">
+                          <Image
+                            src="/images/flexibility.png"
+                            alt="Flexibility icon"
+                            width={24}
+                            height={24}
+                            className="mt-1 flex-shrink-0"
+                          />
+                        </div>
                         <div>
                           <h4 className="text-[#ffffff] font-semibold mb-2">Flexibility</h4>
-                          <p className="text-[#ffffff] text-sm">
-                            Can be used to simulate the experience with each individual robot.
-                          </p>
+                          <p className="text-[#ffffff] text-sm">Make big changes to the experience with code.</p>
                         </div>
                       </div>
                     </div>
@@ -424,50 +470,35 @@ export default function Component() {
 
                     {/* User Type Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                      <Card className="border-2 border-gray-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="mb-4">
-                            <Image
-                              src="/images/smo.png"
-                              alt="Small Plant Owner"
-                              width={200}
-                              height={200}
-                              className="w-full h-48 object-contain"
-                            />
-                          </div>
-                          <h4 className="font-semibold text-[#000000]">Small Plant Owners</h4>
-                        </CardContent>
-                      </Card>
+                      <div className="text-center">
+                        <Image
+                          src="/images/smo.png"
+                          alt="Ease of Learning Chart"
+                          width={300}
+                          height={200}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
 
-                      <Card className="border-2 border-gray-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="mb-4">
-                            <Image
-                              src="/images/factoryoperators.png"
-                              alt="Factory Operator"
-                              width={200}
-                              height={200}
-                              className="w-full h-48 object-contain"
-                            />
-                          </div>
-                          <h4 className="font-semibold text-[#000000]">Factory Operators</h4>
-                        </CardContent>
-                      </Card>
+                      <div className="text-center">
+                        <Image
+                          src="/images/factoryoperators.png"
+                          alt="Factory Operator Image"
+                          width={300}
+                          height={200}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
 
-                      <Card className="border-2 border-gray-300">
-                        <CardContent className="p-6 text-center">
-                          <div className="mb-4">
-                            <Image
-                              src="/images/students.png"
-                              alt="Students"
-                              width={200}
-                              height={200}
-                              className="w-full h-48 object-contain"
-                            />
-                          </div>
-                          <h4 className="font-semibold text-[#000000]">Students</h4>
-                        </CardContent>
-                      </Card>
+                      <div className="text-center">
+                        <Image
+                          src="/images/students.png"
+                          alt="Student Image"
+                          width={300}
+                          height={200}
+                          className="w-full h-auto rounded-lg"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -493,10 +524,6 @@ export default function Component() {
                         height={400}
                         className="w-full h-auto rounded-lg"
                       />
-                      <p className="text-sm text-gray-500 mt-2 text-center">Getting feedback from Automate attendees</p>
-                      <p className="text-sm text-gray-600 mt-1 text-center">
-                        Some older factory workers said they wouldn't want to try XR
-                      </p>
                     </div>
 
                     <p className="text-[#000000] mb-2 text-lg font-bold">
@@ -543,9 +570,6 @@ export default function Component() {
                         height={400}
                         className="w-full h-auto rounded-lg"
                       />
-                      <p className="text-sm text-gray-500 mt-2 text-center">
-                        Testing whether people of all ages would use XR
-                      </p>
                     </div>
                   </div>
 
@@ -666,24 +690,350 @@ export default function Component() {
                       forward.
                     </p>
 
-                    {/* Tabs */}
+                    {/* Interactive Tabs */}
                     <div className="flex space-x-4 mb-6">
-                      <div className="bg-[#1e1e1e] text-[#ffffff] px-4 py-2 rounded text-sm font-medium">
+                      <button
+                        onClick={() => setActiveExperiment("look-and-feel")}
+                        className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                          activeExperiment === "look-and-feel"
+                            ? "bg-[#1e1e1e] text-[#ffd700]"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        }`}
+                      >
                         look and feel
-                      </div>
-                      <div className="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm">Gamification</div>
-                      <div className="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm">Personalization with AI</div>
+                      </button>
+                      <button
+                        onClick={() => setActiveExperiment("gamification")}
+                        className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                          activeExperiment === "gamification"
+                            ? "bg-[#1e1e1e] text-[#ffd700]"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        }`}
+                      >
+                        Gamification
+                      </button>
+                      <button
+                        onClick={() => setActiveExperiment("personalization")}
+                        className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
+                          activeExperiment === "personalization"
+                            ? "bg-[#1e1e1e] text-[#ffd700]"
+                            : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                        }`}
+                      >
+                        Personalization with AI
+                      </button>
                     </div>
 
-                    {/* VR Environment Image */}
+                    {/* Dynamic Content Based on Active Tab */}
                     <div className="mb-8">
                       <Image
-                        src="/images/look-and-feel.png"
-                        alt="VR environment interface showing robotic work station"
+                        src={experimentContent[activeExperiment].image || "/placeholder.svg"}
+                        alt={experimentContent[activeExperiment].alt}
                         width={800}
                         height={400}
                         className="w-full h-auto rounded-lg"
                       />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Writing An Impactful Story Section */}
+            <section id="writing" className="py-20 bg-[#ffffff] -mx-8 px-8">
+              <div>
+                <h2 className="text-3xl font-bold text-[#000000] mb-8">Writing An Impactful Story</h2>
+                <p className="text-gray-600 mb-8 leading-relaxed">
+                  Now that we know how we wanted our extended reality, we had to figure out how to keep people engaged
+                  throughout the experience. So we wrote a story that follows the journey of someone informed by our
+                  research and education best practices.
+                </p>
+
+                <div className="space-y-12">
+                  {/* Story Sketches */}
+                  <div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                      <div className="text-center">
+                        <Image
+                          src="/placeholder.svg?height=300&width=400"
+                          alt="Sketch of exploring robotic work station in mixed reality"
+                          width={400}
+                          height={300}
+                          className="w-full h-auto rounded-lg mb-4"
+                        />
+                        <h4 className="font-semibold text-[#000000] mb-2">
+                          Exploring a robotic work station in mixed reality
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                          With grab-able robotic items and annotations explaining each one.
+                        </p>
+                      </div>
+
+                      <div className="text-center">
+                        <Image
+                          src="/placeholder.svg?height=300&width=400"
+                          alt="Sketch of meeting future self in virtual reality"
+                          width={400}
+                          height={300}
+                          className="w-full h-auto rounded-lg mb-4"
+                        />
+                        <h4 className="font-semibold text-[#000000] mb-2">
+                          Meeting your "future self" in virtual reality
+                        </h4>
+                        <p className="text-gray-600 text-sm">
+                          The future self represents the user with newfound robotics knowledge. They will guide the user
+                          throughout the experience.
+                        </p>
+                      </div>
+
+                      <div className="text-center">
+                        <Image
+                          src="/placeholder.svg?height=300&width=400"
+                          alt="Sketch of learning scenario"
+                          width={400}
+                          height={300}
+                          className="w-full h-auto rounded-lg mb-4"
+                        />
+                        <h4 className="font-semibold text-[#000000] mb-2">Learning</h4>
+                        <p className="text-gray-600 text-sm">With guided interactions and feedback.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* High Fidelity Scenes */}
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#000000] mb-4">
+                      We Created 3 Scenes Of The Story In High Fidelity.
+                    </h3>
+
+                    {/* Scene Tabs */}
+                    <div className="flex space-x-4 mb-6">
+                      <div className="bg-[#ffd700] text-[#000000] px-4 py-2 rounded text-sm font-medium">
+                        Problem-solving in VR
+                      </div>
+                      <div className="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm">
+                        Robotic work station in MR
+                      </div>
+                      <div className="bg-gray-200 text-gray-700 px-4 py-2 rounded text-sm">AI guidance</div>
+                    </div>
+
+                    {/* High Fidelity Scene Image */}
+                    <div className="mb-8">
+                      <Image
+                        src="/images/ps-in-vr.png"
+                        alt="High fidelity VR scene showing people working on problem-solving tasks"
+                        width={800}
+                        height={400}
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Creating the VR Problem-Solving Task */}
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#000000] mb-4">Creating the VR problem-solving task</h3>
+                    <p className="text-gray-600 mb-8 leading-relaxed">
+                      To determine which problem-solving task we wanted to build in VR, we tested many different tasks
+                      with our target audiences.
+                    </p>
+
+                    <ul className="text-gray-600 mb-8 space-y-2">
+                      <li>• Programming the path of a robot arm</li>
+                      <li>• Identifying which robot attachment is required to achieve a given manufacturing goal</li>
+                      <li>• Assembling robots to complete a task (like opening a car door)</li>
+                      <li>• Laying out robots on a factory floor in the right order</li>
+                    </ul>
+
+                    {/* Testing Images */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                      <Image
+                        src="/images/coding-robot-arm.png"
+                        alt="Person testing VR problem-solving task"
+                        width={300}
+                        height={250}
+                        className="w-full h-auto rounded-lg"
+                      />
+                      <Image
+                        src="/images/ee-test.png"
+                        alt="Group testing robotic assembly task"
+                        width={300}
+                        height={250}
+                        className="w-full h-auto rounded-lg"
+                      />
+                      <Image
+                        src="/images/strawberry-factory-test.png"
+                        alt="Testing factory layout task"
+                        width={300}
+                        height={250}
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </div>
+
+                    <p className="text-gray-600 mb-8 leading-relaxed">
+                      90% of people ranked the factory layout task as the most engaging because of its trial-and-error
+                      aspect, while 60% of people said they learned the most from identifying the robot attachment. All
+                      participants agreed that the robot arm path was the least memorable and engaging.
+                    </p>
+                  </div>
+
+                  {/* Results Charts */}
+                  <div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
+                      <div className="text-center">
+                        <Image
+                          src="/images/most-engaging-chart.png"
+                          alt="Most engaging and enjoyable chart"
+                          width={300}
+                          height={300}
+                          className="w-full h-auto rounded-lg mx-auto"
+                        />
+                      </div>
+
+                      <div className="text-center">
+                        <Image
+                          src="/images/learned-the-most.png"
+                          alt="Learned the most chart"
+                          width={300}
+                          height={300}
+                          className="w-full h-auto rounded-lg mx-auto"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Our Final Task Section */}
+                  <div className="mt-12 pt-12 border-t border-gray-200">
+                    <h3 className="text-xl font-semibold text-[#000000] mb-4">
+                      Our final task combines the best of both worlds
+                    </h3>
+                    <p className="text-gray-600 mb-4 leading-relaxed">
+                      We combined the trial and error aspect of the factory layout task with the learning opportunity in
+                      the robot attachment task.
+                    </p>
+                    <p className="text-gray-600 mb-8 leading-relaxed">
+                      In our final task, users arrive to a chocolate production line that has gone haywire, and must
+                      reorganize the robot attachments to successfully create a chocolate bar.
+                    </p>
+
+                    {/* Chocolate Production Line Diagram */}
+                    <div className="mb-12">
+                      <Image
+                        src="/images/chocolate-sketch.png"
+                        alt="Chocolate production line diagram showing conveyor belt and robotic stations"
+                        width={800}
+                        height={400}
+                        className="w-full h-auto rounded-lg"
+                      />
+                    </div>
+
+                    {/* Why Chocolate Section */}
+                    <h3 className="text-xl font-semibold text-[#000000] mb-4">Why Chocolate?</h3>
+                    <p className="text-gray-600 mb-8 leading-relaxed">
+                      We explored several different items involving physical state change in a factory, like balloons
+                      and coffee. Chocolate stood out for its clarity of transformation (liquid to solid), broad
+                      relatability, and potential for humor as a main player in this VR problem-solving task.
+                    </p>
+
+                    {/* Comparison Table */}
+                    <div className="overflow-x-auto">
+                      <table className="w-full border-collapse mb-8">
+                        <thead>
+                          <tr className="bg-[#1e1e1e] text-white">
+                            <th className="border border-gray-300 p-4 text-left font-semibold">Feature</th>
+                            <th className="border border-gray-300 p-4 text-left font-semibold">Relatability</th>
+                            <th className="border border-gray-300 p-4 text-left font-semibold">State Change</th>
+                            <th className="border border-gray-300 p-4 text-left font-semibold">Humor</th>
+                            <th className="border border-gray-300 p-4 text-left font-semibold">Phys. Takeaway</th>
+                            <th className="border border-gray-300 p-4 text-left font-semibold">Feasibility</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="bg-white">
+                            <td className="border border-gray-300 p-4 font-medium">Balloons</td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-red-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✕
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-red-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✕
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-yellow-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ○
+                              </span>
+                            </td>
+                          </tr>
+                          <tr className="bg-gray-50">
+                            <td className="border border-gray-300 p-4 font-medium">Coffee</td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-red-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✕
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-yellow-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ○
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-yellow-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ○
+                              </span>
+                            </td>
+                          </tr>
+                          <tr className="bg-[#ffd700] bg-opacity-30">
+                            <td className="border border-gray-300 p-4 font-medium">Chocolate</td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-green-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ✓
+                              </span>
+                            </td>
+                            <td className="border border-gray-300 p-4 text-center">
+                              <span className="inline-block w-6 h-6 bg-yellow-500 rounded-full text-white text-xs flex items-center justify-center">
+                                ○
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 </div>
@@ -972,9 +1322,9 @@ export default function Component() {
                     </p>
                     <p className="text-gray-300 mb-4 leading-relaxed">We built a custom app with a system that:</p>
                     <ul className="text-gray-300 space-y-2">
-                      <li>Allows the headset to avoid putting the work station over objects</li>
+                      <li>• Allows the headset to avoid putting the work station over objects</li>
                       <li>
-                        Remembers where the work station has been placed, so ARM only needs to do it once in a given
+                        • Remembers where the work station has been placed, so ARM only needs to do it once in a given
                         room
                       </li>
                     </ul>
@@ -1056,6 +1406,157 @@ export default function Component() {
                         We continued testing to identify the optimal balance between questions and direction and
                         re-trained ARMbot with that in mind.
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* The Impact Section */}
+        <div className="bg-[#ffffff] py-20">
+          <div className="text-center mb-16">
+            <div className="inline-block bg-white px-8 py-4">
+              <h2 className="text-5xl font-bold text-[#6e4aff]">The Impact</h2>
+            </div>
+          </div>
+
+          {/* Full-width purple background section */}
+          <div className="bg-[#6e4aff] w-full">
+            <div className="max-w-7xl mx-auto px-8 py-12">
+              {/* Kenny placeholder image */}
+              <div className="mb-16">
+                <Image
+                  src="/placeholder.svg?height=400&width=800"
+                  alt="Kenny, Factory Operator"
+                  width={800}
+                  height={400}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+
+              {/* ARM Anticipates Section */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-64 mb-16">
+                <div>
+                  <h3 className="text-2xl font-semibold mb-6 text-white">
+                    ARM Anticipates That This Experience Will Drastically Improve Their Ability To Serve Their
+                    Audiences.
+                  </h3>
+                  <p className="text-white mb-4">The new experience allows ARM to:</p>
+                  <ul className="text-white space-y-2 text-sm">
+                    <li>
+                      • Get visitors up close to robots in an engaging, immersive way – without noise or safety concerns
+                    </li>
+                    <li>• Attract audiences at offsite locations, such as trade shows and conventions</li>
+                  </ul>
+                </div>
+
+                {/* ✅ Updated Quote Image */}
+                <div className="w-full">
+                  <Image
+                    src="/images/arm quote 1.png"
+                    alt="Factory production manager testimonial"
+                    width={600}
+                    height={300}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+              </div>
+
+              {/* Testimonials Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-64 mb-16">
+                <Image
+                  src="/images/arm quote 2.png"
+                  alt="ARM testimonial"
+                  width={300}
+                  height={150}
+                  className="w-full h-auto rounded-lg"
+                />
+
+                <Image
+                  src="/images/arm quote 3.png"
+                  alt="Factory Operator testimonial"
+                  width={300}
+                  height={150}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+
+              {/* Measuring Impact Section */}
+              <div className="mb-16">
+                <h3 className="text-2xl font-semibold mb-6 text-white">Measuring Impact And Looking Forward</h3>
+                <p className="text-white mb-8">
+                  If we had enough time, we would have loved to measure two key metrics to further determine the success
+                  of our solution in the long-term:
+                </p>
+
+                {/* Metrics Cards */}
+                <div className="space-y-8">
+                  {/* Robotics Career Card */}
+                  <div className="bg-black rounded-lg p-6 flex items-center space-x-6">
+                    <div className="w-24 h-16 bg-[#ffd700] rounded flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                          fillRule="evenodd"
+                          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947z"
+                          clipRule="evenodd"
+                        />
+                        <path fillRule="evenodd" d="M10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-16 h-16 bg-gray-700 rounded flex-shrink-0">
+                          <Image
+                            src="/placeholder.svg?height=64&width=64"
+                            alt="Robotics career visits"
+                            width={64}
+                            height={64}
+                            className="w-full h-full object-cover rounded"
+                          />
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold">roboticscareer.org visits</h4>
+                          <p className="text-gray-300 text-sm">
+                            If more people are visiting ARM's website for robotics jobs and robotics training after
+                            engaging with the experience, it's a strong signal that the experience is sparking career
+                            interest and action.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Manufacturer Interest Card */}
+                  <div className="bg-black rounded-lg p-6 flex items-center space-x-6">
+                    <div className="w-24 h-16 bg-[#ffd700] rounded flex items-center justify-center flex-shrink-0">
+                      <svg className="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                      </svg>
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center space-x-4">
+                        <div className="w-16 h-16 bg-gray-700 rounded flex-shrink-0">
+                          <Image
+                            src="/placeholder.svg?height=64&width=64"
+                            alt="Manufacturer interest"
+                            width={64}
+                            height={64}
+                            className="w-full h-full object-cover rounded"
+                          />
+                        </div>
+                        <div>
+                          <h4 className="text-white font-semibold">
+                            Manufacturer Interest & visits to ARM for robots{" "}
+                          </h4>
+                          <p className="text-gray-300 text-sm">
+                            If ARM is seeing more direct outreach from SMMs - more people stopping by the booth,
+                            follow-ups after trade shows, and on-site visits to ARM, that's a large sign that the
+                            experience is making waves.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
