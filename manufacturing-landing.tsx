@@ -77,7 +77,6 @@ export default function Component() {
     },
   ]
 
-
   const storyboardSlideshow = [
     {
       src: "/images/storyboard 1.png",
@@ -804,29 +803,28 @@ export default function Component() {
                   {/* Story Sketches */}
                   <div>
                     <div className="relative overflow-hidden rounded-lg">
-                    <div className="w-full max-w-6xl mx-auto overflow-x-auto">
-                      <div className="flex">
-                        {/* First set of images */}
-                        {storyboardSlideshow.map((image, index) => (
-                          <div key={index} className="flex-shrink-0 w-80 mx-4">
-                            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                              <Image
-                                src={image.src || "/placeholder.svg"}
-                                alt={image.title}
-                                width={320}
-                                height={240}
-                                className="w-full h-60 object-cover"
-                              />
-                              <div className="p-4">
-                                <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
-                                <p className="text-gray-600 text-sm">{image.date}</p>
+                      <div className="w-full max-w-6xl mx-auto overflow-x-auto">
+                        <div className="flex">
+                          {/* First set of images */}
+                          {storyboardSlideshow.map((image, index) => (
+                            <div key={index} className="flex-shrink-0 w-80 mx-4">
+                              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                                <Image
+                                  src={image.src || "/placeholder.svg"}
+                                  alt={image.title}
+                                  width={320}
+                                  height={240}
+                                  className="w-full h-60 object-cover"
+                                />
+                                <div className="p-4">
+                                  <h3 className="font-semibold text-[#000000] mb-2">{image.title}</h3>
+                                  <p className="text-gray-600 text-sm">{image.date}</p>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        ))}
-                        
+                          ))}
+                        </div>
                       </div>
-                    </div>
                     </div>
                   </div>
 
@@ -1338,13 +1336,10 @@ export default function Component() {
             <div className="mb-16">
               {/* Hero Image for Mixed Reality */}
               <div className="mb-12 relative">
-                <Image
-                  src="/placeholder.svg?height=400&width=1200"
-                  alt="Learning About Robotic Work Stations In Mixed Reality - VR interface showing role selection"
-                  width={1200}
-                  height={400}
-                  className="w-full h-auto rounded-lg"
-                />
+                <video autoPlay muted loop playsInline className="w-full h-auto rounded-lg" width={1200} height={400}>
+                  <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_0d7HBZNYnPmZh6444mzuObE2ygd8/ZjiWv7myTF847A_Ahz1uV2/public/images/MR%20Demo%20comp.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
                 <div className="absolute top-8 left-8">
                   <h3 className="text-2xl font-bold text-white">Learning About Robotic Work</h3>
                   <h3 className="text-2xl font-bold text-white">Stations In Mixed Reality</h3>
