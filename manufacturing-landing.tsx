@@ -100,18 +100,18 @@ export default function Component() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full">
             {/* Client */}
             <div>
-              <h3 className="text-[#ffffff] mb-4">Client</h3>
-              <p className="text-[#ffffff] leading-relaxed mx-0 px-0 pr-0 mr-6">
+              <h4 className="text-[#ffffff] mb-4">Client</h4>
+              <h3 className="text-[#ffffff] leading-relaxed mx-0 px-0 pr-0 mr-6">
                 Advanced Robotics Manufacturing Institute (ARM)
-              </p>
+              </h3>
             </div>
 
             {/* Creative Technologists */}
             <div>
               <h3 className="text-[#ffffff] mb-4">Creative Technologists</h3>
               <div className="space-y-2">
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Tassy Chen</p>
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Aarnav Sangekar</p>
+                <h4 className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Tassy Chen</h4>
+                <h4 className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Aarnav Sangekar</h4>
               </div>
             </div>
 
@@ -119,11 +119,11 @@ export default function Component() {
             <div className="text-left">
               <h3 className="text-[#ffffff] mb-4">Creative Designers</h3>
               <div className="space-y-2">
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Esha Garg</p>
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">
+                <h4 className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Esha Garg</h4>
+                <h4 className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">
                   Jackie Strawbridge
-                </p>
-                <p className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Victor Wang</p>
+                </h4>
+                <h4 className="text-[#ffffff] underline cursor-pointer hover:text-gray-200">Victor Wang</h4>
               </div>
             </div>
           </div>
@@ -173,9 +173,9 @@ export default function Component() {
       <div className="relative max-w-7xl mx-auto px-8">
         <div className="flex gap-8">
           {/* Sticky Navigation - will follow scroll until end of writing section */}
-          <div className="w-48 flex-shrink-0">
+          <div className="w-48 flex-shrink-0 mr-5 mt-7 mb-12">
             <div className="sticky top-8 z-10">
-              <div className="bg-[#1e1e1e] rounded-lg p-4">
+              <div className="bg-[#1e1e1e] rounded-lg p-4 mr-6 mt-16">
                 <nav className="space-y-4">
                   <div>
                     <div className="text-yellow-400 font-medium mb-1 text-sm">01</div>
